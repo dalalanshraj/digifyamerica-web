@@ -8,6 +8,7 @@ const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.66391
 
 
 export default function Footer() {
+  
   return (
     <>
       {/* Connect Section */}

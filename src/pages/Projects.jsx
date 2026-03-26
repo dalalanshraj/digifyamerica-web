@@ -15,6 +15,7 @@ import templateOne from '../assets/project-img/project6.jpg'
 import templateTwo from '../assets/project-img/project7.jpg'
 import newvillaTwo from '../assets/project-img/project3.jpg'
 import newvilla from '../assets/project-img/project8.png'
+import landscapers from '../assets/project-img/project9.png'
 
 
 
@@ -74,6 +75,13 @@ const projects = [
     link: 'https://newvilla8.mydesign.blog/',
     // tag: 'Single Villa Website',
     alt: 'Beach Property',
+  },
+  {
+    image: landscapers,
+    title: 'Landscapers',
+    link: 'https://landscapers.mydesign.blog/',
+    // tag: 'Single Villa Website',
+    alt: 'Landscapers',
   },
 ];
 

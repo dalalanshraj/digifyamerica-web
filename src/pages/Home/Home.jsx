@@ -141,9 +141,10 @@ function Home() {
      <title>DigifyAmerica - Home</title>
       <meta
         name="description"
-        content="Digital marketing, branding, and web development services in the USA. Boost your business with Digify America."
+        content="Digital marketing, branding, and web 
+        development services in the USA. 
+        Boost your business with Digify America."
       />
-
     </Helmet>
     <div className='bg-[#D2C1B6]'>
 
