@@ -206,7 +206,7 @@ const PrivacyPolicy = () => {
             </p>
             <div className="p-4 bg-gray-50 rounded-lg shadow-sm">
               <p className="mb-2 text-gray-700">
-                <strong>Phone:</strong> <span className="text-blue-600">[+1 786 224 2280]</span>
+                <strong>Phone:</strong> <span className="text-blue-600">[+1 786-224-2351]</span>
               </p>
               <p className="text-gray-700">
                 <strong>Email:</strong> <span className="text-blue-600">[contact@digifyamerica.com]</span>

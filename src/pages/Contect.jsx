@@ -88,7 +88,7 @@ const Connect = () => {
       >
         <div className="absolute inset-0 bg-[#000000c1] bg-opacity-60 z-10"></div>
         <div className="relative z-20 max-w-2xl px-4">
-          <h2 className="text-3xl md:text-4xl font-light mb-4 text-[#D2C1B6] Poppins-font">
+          <h2 className="text-3xl md:text-4xl font-light mb-4 text-[#fff] Poppins-font">
             Let's connect!
           </h2>
           <p className="text-lg md:text-xl font-light">
@@ -155,7 +155,7 @@ const Connect = () => {
                 className="bg-[#234C6A] text-white px-20 py-2 rounded-lg font-bold text-lg ml-20
                            shadow-[0_4px_0px_#456882] 
                            transform transition-all duration-200 
-                           hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#D2C1B6] 
+                           hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#fff] 
                            active:translate-y-[2px] active:shadow-none"
               >
                 SUBMIT

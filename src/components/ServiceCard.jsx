@@ -14,7 +14,7 @@ const ServiceCard = ({ image, title, description }) => {
         <div className="flex justify-center transition-all duration-300 ease-in-out transform group-hover:scale-110 mb-2">
           <img loading="lazy" src={image} alt={title} className="w-74 h-74 object-contain" />
         </div>
-        <h3 className="text-2xl font-[600] text-center mb-2 text-[#D2C1B6] group-hover:text-black">
+        <h3 className="text-2xl font-[600] text-center mb-2 text-[#fff] group-hover:text-black">
           {title}
         </h3>
         <p className="text-white text-center text-[18px] group-hover:text-black">

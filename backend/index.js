@@ -1,87 +1,137 @@
 import express from "express";
-import cors from "cors";
-import nodemailer from "nodemailer";
+import fetch from "node-fetch";
 import dotenv from "dotenv";
+import cors from "cors";
 
-dotenv.config(); // Load .env variables
+dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
-
-// ✅ Allowed origins (local + live)
-const allowedOrigins = [
-  "http://localhost:3000",
-  "http://localhost:5173",
-  "https://www.digifyamerica.com",
-  "https://digifyamerica.com",
-  "https://demodigify.mycreativewebsite.com"
-];
-
-// ✅ Enable CORS with OPTIONS support
-app.use(
-  cors({
-    origin: (origin, callback) => {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        console.error("❌ Blocked by CORS:", origin);
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type"],
-    credentials: true,
-  })
-);
-
-// ✅ Handle preflight OPTIONS request
-app.options("*", cors());
-
+app.use(cors());
 app.use(express.json());
 
-// ✅ Nodemailer transporter
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST || "smtp.gmail.com",
-  port: 587,
-  secure: false, // use STARTTLS instead of SSL
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
+const base =
+  process.env.NODE_ENV === "production"
+    ? "https://api-m.paypal.com"
+    : "https://api-m.sandbox.paypal.com";
 
-// Verify SMTP connection
-transporter.verify((error, success) => {
-  if (error) {
-    console.error("❌ SMTP Connection Error:", error);
-  } else {
-    console.log("✅ SMTP Server is ready to take messages");
+// 🔑 Get Access Token
+async function getAccessToken() {
+  const response = await fetch(`${base}/v1/oauth2/token`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+      Authorization:
+        "Basic " +
+        Buffer.from(
+          process.env.PAYPAL_CLIENT_ID + ":" + process.env.PAYPAL_SECRET
+        ).toString("base64"),
+    },
+    body: "grant_type=client_credentials",
+  });
+
+  const data = await response.json();
+  console.log("TOKEN RESPONSE:", data);
+
+  if (!data.access_token) {
+    throw new Error("Failed to get access token");
+  }
+
+  return data.access_token;
+}
+
+// 🧾 Create Order
+app.post("/create-order", async (req, res) => {
+  try {
+    const { amount } = req.body;
+
+    if (!amount) {
+      return res.status(400).json({ error: "Amount required" });
+    }
+
+    const accessToken = await getAccessToken();
+
+    const response = await fetch(`${base}/v2/checkout/orders`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${accessToken}`,
+      },
+      body: JSON.stringify({
+        intent: "CAPTURE",
+        purchase_units: [
+          {
+            amount: {
+              currency_code: "USD",
+              value: amount,
+            },
+          },
+        ],
+        application_context: {
+          return_url: "https://digifyamerica.com/success", // ✅ FIX
+          cancel_url: "https://digifyamerica.com/cancel",  // ✅ FIX
+        },
+      }),
+    });
+
+    const data = await response.json();
+    console.log("PAYPAL RESPONSE:", data);
+
+    // ❌ PayPal error handling
+    if (!data.links) {
+      return res.status(500).json({
+        error: "PayPal API failed",
+        details: data,
+      });
+    }
+
+    const approveLink = data.links.find(
+      (link) => link.rel === "approve"
+    );
+
+    if (!approveLink) {
+      return res.status(500).json({
+        error: "Approval link not found",
+        details: data,
+      });
+    }
+
+    res.json({ url: approveLink.href });
+
+  } catch (err) {
+    console.error("SERVER ERROR:", err);
+    res.status(500).json({ error: "Internal Server Error" });
   }
 });
 
-// ✅ Test route
-app.get("/", (req, res) => {
-  res.send("Backend is running ✅");
-});
-
-// ✅ Send email route
-app.post("/send-email", async (req, res) => {
+// 🧾 Capture Order (Success page ke liye)
+app.post("/capture-order", async (req, res) => {
   try {
-  await transporter.sendMail({
-    from: process.env.EMAIL_USER,
-    to: process.env.TO_EMAIL,
-    subject: "New Contact Form Submission",
-    text: message,
-  });
+    const { orderID } = req.body;
 
-  res.status(200).json({ success: true, message: "Email sent successfully" });
-} catch (error) {
-  console.error("❌ Email send error:", error);
-  res.status(500).json({ success: false, message: "Server error", error: error.message });
-}
+    const accessToken = await getAccessToken();
 
+    const response = await fetch(
+      `${base}/v2/checkout/orders/${orderID}/capture`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${accessToken}`,
+        },
+      }
+    );
+
+    const data = await response.json();
+    console.log("CAPTURE RESPONSE:", data);
+
+    res.json(data);
+
+  } catch (err) {
+    console.error("CAPTURE ERROR:", err);
+    res.status(500).json({ error: "Capture failed" });
+  }
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server is running on port ${PORT}`);
-});
+// 🚀 Start server
+const PORT = process.env.PORT || 5002;
+app.listen(PORT, () => console.log(`Server running on ${PORT}`));

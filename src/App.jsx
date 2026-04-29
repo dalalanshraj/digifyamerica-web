@@ -6,6 +6,9 @@ import ScrollToTop from "./components/ScrollToTop.jsx";
 import Preloader from "./components/Preloader.jsx";
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import PaymentPage from "./pages/PaymentPage.jsx";
+import Success from "./pages/Success.jsx";
+import Cancel from "./pages/Cancel.jsx";
 
 
 // ✅ Lazy imports (only pages)
@@ -89,6 +92,9 @@ function App() {
           <Route path="/terms-&-conditions/" element={<TermsConditions />} />
           <Route path="/24/7-support/" element={<Support />} />
           <Route path="/faq" element={<FaqSection />}/>
+          <Route path="/paymyorder" element={<PaymentPage />} />
+          <Route path="/success" element={<Success />} />
+          <Route path="/cancel" element={<Cancel />} />
         </Routes>
       </Suspense>
 

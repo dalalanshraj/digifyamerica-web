@@ -52,19 +52,19 @@ const SeoService = () => {
               Why is SEO Important?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
-              <div className="flex items-start gap-3 text-[#D2C1B6]">
+              <div className="flex items-start gap-3 text-[#fff]">
                 <CheckCircle className="text-[#fff] h-6 w-6 flex-shrink-0" />
                 <p className="text-lg ">People find you when they need you</p>
               </div>
-              <div className="flex items-start gap-3 text-[#D2C1B6]">
+              <div className="flex items-start gap-3 text-[#fff]">
                 <CheckCircle className="text-[#fff] h-6 w-6 flex-shrink-0" />
                 <p className="text-lg ">It's like having a 24/7 helper</p>
               </div>
-              <div className="flex items-start gap-3 text-[#D2C1B6]">
+              <div className="flex items-start gap-3 text-[#fff]">
                 <CheckCircle className="text-[#fff] h-6 w-6 flex-shrink-0" />
                 <p className="text-lg ">It builds trust.</p>
               </div>
-              <div className="flex items-start gap-3 text-[#D2C1B6]">
+              <div className="flex items-start gap-3 text-[#fff]">
                 <CheckCircle className="text-[#fff] h-6 w-6 flex-shrink-0" />
                 <p className="text-lg ">It lasts longer than Ads.</p>
               </div>

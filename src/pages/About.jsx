@@ -3,13 +3,10 @@ import { Helmet } from "react-helmet-async";
 import { Eye, Target } from 'lucide-react';
 import planImage from "../assets/service-vector/digital growth.png";
 import founderImage from "../assets/Owner/Image.jpeg";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+
 import { useState } from 'react';
 import PartnerSection from '../components/partnerSection';
+import TestimonialsSection from '../components/Testimonial';
 
 
 const testimonials = [
@@ -123,7 +120,7 @@ const About = () => {
                   className="bg-[#234C6A] text-white px-5 py-2 rounded-lg font-bold text-lg mr-20
              shadow-[0_4px_0px_#456882] 
              transform transition-all duration-200 
-             hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#D2C1B6] 
+             hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#fff] 
              active:translate-y-[2px] active:shadow-none" >
                   Explore More
                 </a>
@@ -174,84 +171,7 @@ const About = () => {
             </div>
           </div>
         </section>
-        <p className='
-  absolute 
-  text-gray-100 
-  font-bold 
-  uppercase 
-  // Mobile & Small Screens
-  text-[2.4rem] 
-  fontplayfair 
- mt-33
-  left-1/2 
-  -translate-x-1/2 
-  -translate-y-1/2
-  whitespace-nowrap 
-  
-  // Medium Screens (md)
-  md:text-[10rem] 
-  
-  // Large Screens (lg)
-  lg:text-[9rem] 
-'>
-          Our Testimonial
-        </p>
-        <div className="w-full py-22  pt-45">
-          <h3 className='text-center  text-[25px] md:text-[60px] font-[300] mx-1 fontplayfair whitespace-nowrap text-[#1B3C53]'>Hear From Those Who Trust Us</h3>
-          <Swiper
-            effect={'coverflow'}
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView={'auto'}
-            spaceBetween={40}
-            pagination={{ clickable: true }}
-            modules={[EffectCoverflow, Pagination]}
-            coverflowEffect={{
-              rotate: 0,
-              stretch: 0,
-              depth: 100,
-              modifier: 2,
-              slideShadows: false,
-            }}
-            onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-            className="w-full max-w-8xl mx-auto"
-          >
-            {testimonials.map((item, idx) => {
-              const isActive = idx === activeIndex;
-              return (
-                <SwiperSlide
-                  key={idx}
-                  className={`max-w-md px-6 py-8 rounded-lg shadow-md relative flex flex-col items-center text-center transition-all duration-300 ${isActive
-                      ? 'bg-[#234C6A] text-[#fff]'
-                      : 'bg-[#456882] text-[#D2C1B6]'
-                    }`}
-                  style={{ height: 'auto' }}
-                >
-                  <p className="text-lg leading-relaxed mb-4">“{item.text}”</p>
-                  <div className="mt-6">
-                    {/* <img
-                    //   src={item.image}
-                      alt={item.author}
-                      className="w-16 h-16 rounded-full mx-auto mb-2"
-                    /> */}
-                    <h4 className={`font-semibold ${!isActive ? 'text-white' : 'text-[#D2C1B6]'}`}>
-                      {item.author}
-                    </h4>
-                    <p className={`text-sm ${!isActive ? 'text-gray-400' : 'text-blue-100'}`}>
-                      {item.role}
-                    </p>
-                  </div>
-                  {isActive && (
-                    <div className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-6 h-6  rotate-45"></div>
-                  )}
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-
-          {/* Pagination Dots */}
-          <div className="swiper-pagination mt-6 text-center"></div>
-        </div>
+        <TestimonialsSection />
         <p className='
   absolute 
   text-gray-50 

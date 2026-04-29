@@ -23,7 +23,7 @@ export default function Footer() {
               className="bg-[#234C6A] text-white px-5 py-2 rounded-lg font-bold text-lg 
              shadow-[0_4px_0px_#456882] 
              transform transition-all duration-200 
-             hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#D2C1B6] 
+             hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#fff] 
              active:translate-y-[2px] active:shadow-none"
             >
               Contact Our Team
@@ -44,8 +44,8 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-5 text-center md:text-left">
           {/* Column 1 */}
           <div>
-           <a href="tel:+1 7862242280"> <button className="mb-4 px-6 py-2 border border-[#D2C1B6] font-semibold hover:bg-[#FFF5E1] hover:text-black transition">
-              Give us a call: +1 786 224 2280
+           <a href="tel:+1 7862242280"> <button className="mb-4 px-6 py-2 border border-[#fff] font-semibold hover:bg-[#FFF5E1] hover:text-black transition">
+              Give us a call: +1 786-224-2351
             </button></a>
             <br />
             <button className="mb-1  py-2  font-semibold ">
@@ -147,7 +147,7 @@ export default function Footer() {
           <TrustpilotWidget />
         </div>
         {/* Bottom Bar */}
-        <div className="mt-12 border-t-3 border-[#D2C1B6] pt-6 text-center text-sm text-white/80">
+        <div className="mt-12 border-t-3 border-[#fff] pt-6 text-center text-sm text-white/80">
           <p>
             2025 Copyright © & Powered by <a href="digifyamrica.com"> Digify America</a>
           </p>

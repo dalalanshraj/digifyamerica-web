@@ -72,7 +72,7 @@ const Blogs = () => {
       >
         <div className="absolute inset-0 bg-[#000000c1] z-10"></div>
         <div className="relative z-20 max-w-4xl px-4">
-          <h1 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#D2C1B6]">Our Blogs</h1>
+          <h1 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#fff]">Our Blogs</h1>
         </div>
       </section>
 
@@ -97,7 +97,7 @@ const Blogs = () => {
                 <span className="inline-block bg-[#FFF5E1] text-[#000] text-xs font-semibold px-3 py-1 rounded-full mb-3">
                   {blog.category}
                 </span>
-                <h3 className="text-lg font-bold mb-2 text-[#D2C1B6]">{blog.title}</h3>
+                <h3 className="text-lg font-bold mb-2 text-[#fff]">{blog.title}</h3>
                 <p className="text-white text-sm mb-3">{blog.desc}</p>
                 <p className="text-gray-400 text-xs">{blog.date}</p>
               </div>

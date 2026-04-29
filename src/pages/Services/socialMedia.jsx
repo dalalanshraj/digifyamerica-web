@@ -186,7 +186,7 @@ const SocialMedia = () => {
           Let’s Get Social—Strategically
         </h4>
         <p className="max-w-3xl mx-auto text-lg mb-6">
-         <o className="border-2 border-[#D2C1B6] bg-[#D2C1B6] text-black uppercase " >Social media is powerful growth tool.</o> Let’s build you a custom social media strategy that connects, converts, and grows with your business.
+         <o className="border-2 border-[#fff] bg-[#D2C1B6] text-black uppercase " >Social media is powerful growth tool.</o> Let’s build you a custom social media strategy that connects, converts, and grows with your business.
         </p>
         {/* <a
           href="#"

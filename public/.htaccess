@@ -21,6 +21,7 @@ RewriteRule ^(.*)$ https://www.digifyamerica.com/$1 [L,R=301]
 # 4️⃣ React/Vite SPA Routing
 # -----------------------------------------
 RewriteBase /
+
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

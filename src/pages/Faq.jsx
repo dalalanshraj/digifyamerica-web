@@ -102,7 +102,7 @@ const FaqSection = () => {
         <div className="absolute inset-0 bg-[#000000c1] z-10"></div>
 
         <div className="relative z-20 max-w-4xl px-4">
-          <h1 className="text-center text-[60px] font-[300] fontplayfair text-[#D2C1B6]">
+          <h1 className="text-center text-[60px] font-[300] fontplayfair text-[#fff]">
             Frequently Asked Questions
           </h1>
         </div>

@@ -65,7 +65,9 @@ input[type=range]::-moz-range-thumb {
     border: 0;
     cursor: pointer;
   }
-
+  Link{
+    cursor: pointer;
+  }
   /* @keyframes spin-slow {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

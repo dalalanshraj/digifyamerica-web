@@ -133,7 +133,7 @@ const Projects = () => {
                 >
                   <div className="text-3xl font-bold mb-2 text-white">{project.title}</div>
                   <div className="text-lg text-white mb-2">{project.tag}</div>
-                  {/* <p className="text-[#D2C1B6] text-[20px] mb-4 truncate">{project.link}</p> */}
+                  {/* <p className="text-[#fff] text-[20px] mb-4 truncate">{project.link}</p> */}
                   <div className="overflow-hidden rounded-xl">
                     <img
                       src={project.image}
