@@ -1,29 +1,32 @@
-import React from 'react';import { Helmet } from "react-helmet-async"; 
-
+import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const ServiceCard = ({ image, title, description }) => {
   return (
-    <div className="group relative bg-[#234C6A] p-6 rounded-lg shadow-md mx-10 transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-2xl">
-      
-      {/* Animated Color & Shadow Effect */}
-      <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0" style={{ backgroundColor: '#FFF5E1' }}></div>
+    <div className="group relative bg-[#234C6A] p-6 rounded-lg shadow-md mx-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+      <div className="absolute inset-0 rounded-lg bg-[#FFF5E1] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-      {/* Card Content Wrapper */}
-      
-      <div className="relative z-10 flex flex-col items-center Poppins-font ">
-        <div className="flex justify-center transition-all duration-300 ease-in-out transform group-hover:scale-110 mb-2">
-          <img loading="lazy" src={image} alt={title} className="w-74 h-74 object-contain" />
-        </div>
-        <h3 className="text-2xl font-[600] text-center mb-2 text-[#fff] group-hover:text-black">
+      <div className="relative z-10 flex flex-col items-center">
+        <LazyLoadImage
+          src={image}
+          alt={title}
+          effect="blur"
+          loading="lazy"
+          decoding="async"
+          className="w-64 h-64 object-contain transition-transform duration-300 group-hover:scale-105"
+        />
+
+        <h3 className="mt-4 text-2xl font-semibold text-center text-white group-hover:text-black">
           {title}
         </h3>
-        <p className="text-white text-center text-[18px] group-hover:text-black">
+
+        <p className="mt-3 text-center text-lg text-white group-hover:text-black">
           {description}
         </p>
       </div>
-    
     </div>
   );
 };
 
-export default ServiceCard;
+export default React.memo(ServiceCard);

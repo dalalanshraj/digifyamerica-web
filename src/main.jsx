@@ -4,6 +4,9 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
 import './index.css';
 import { HelmetProvider } from "react-helmet-async";
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-PYPKDHZNVK");
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -1,7 +1,7 @@
 import React from 'react';import { Helmet } from "react-helmet-async"; 
 
 import { Bolt, Layout, Smartphone, MousePointer2, CheckCircle, BarChart2, MessageSquare, MapPin, Search, Rocket } from 'lucide-react';
-import heroImage from "../../assets/service-vector/seo.png"
+ 
 const SeoService = () => {
   return (
     <>
@@ -11,7 +11,7 @@ const SeoService = () => {
 
     </Helmet>
 
-    <section className="bg-[#D2C1B6] pt-30 text-[#234C6A] ">
+    <section className="bg-[#fff] pt-30 text-[#234C6A] ">
       {/* Top Section: Text and Image in a grid */}
       <div className="container mx-auto max-w-7xl pt-16 pb-24 px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -34,7 +34,7 @@ const SeoService = () => {
           <div className="order-1 lg:order-2 flex justify-center">
             <img
               // Local file path ko hata diya gaya hai aur iski jagah ek placeholder image URL ka upyog kiya gaya hai.
-              src={heroImage}
+              src="/service-vector/seo.webp"
               alt="SEO - Search Engine Optimization"
               className="w-[100vh] h-auto rounded-lg object-cover"
             />
@@ -70,33 +70,56 @@ const SeoService = () => {
               </div>
             </div>
           </div>
-          <p className='
-  absolute 
-  text-gray-50 
-  font-bold 
-  uppercase 
-  // Mobile & Small Screens
-  text-[2.7rem] 
-  fontplayfair 
- mt-19
-  left-1/2 
-  -translate-x-1/2 
+        <div className="relative flex items-center justify-center py-20 overflow-hidden">
+
+  {/* Background Heading */}
+  <p
+   className="
+  absolute
+  left-1/2
+  top-1/2
+  -translate-x-1/2
   -translate-y-1/2
-  whitespace-nowrap 
-  
-  // Medium Screens (md)
-  md:text-[10rem] 
-  
-  // Large Screens (lg)
-  lg:text-[8rem] 
-'>
-            What We Offer
-          </p>
+  fontplayfair
+  font-bold
+  uppercase
+  whitespace-nowrap
+  text-[4rem]
+  md:text-[8rem]
+  lg:text-[7rem]
+  pointer-events-none
+  select-none
+  text-[#222]
+  opacity-6
+  tracking-[0.15em]
+  "
+  >
+    WHAT WE OFFER
+  </p>
+
+  {/* Main Heading */}
+  <h3
+    className="
+      relative
+      z-10
+      text-center
+      fontplayfair
+      font-[400]
+      text-[#1B3C53]
+      text-[30px]
+      md:text-[50px]
+      lg:text-[60px]
+    "
+  >
+    What We Offer
+  </h3>
+
+</div>
           {/* What We Do Best */}
-          <section className="mb-16 py-28">
-            <h3 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
+          <section className="mb-16 ">
+            {/* <h3 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
               What We Offer
-            </h3>
+            </h3> */}
             <p className="max-w-4xl mx-auto text-lg  text-center mb-10">
               At Digify America, our <o className="text-[#1B3C53] font-bold "> SEO services </o> help businesses of all sizes rise. We use methods that are effective and lasting. We focus on what works, skip what doesn’t, and tailor every move to your goals.
             </p>
@@ -141,7 +164,7 @@ const SeoService = () => {
           </section>
 
           {/* Why SEO with Digify America? */}
-          <div className="bg-[#D2C1B6] p-8 md:p-12 rounded-xl shadow-2xl mb-16">
+          <div className="bg-[#fff] p-8 md:p-12 rounded-xl shadow-2xl mb-16">
             <h4 className="text-center whitespace-nowrap  text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
               Why Digify America?
             </h4>

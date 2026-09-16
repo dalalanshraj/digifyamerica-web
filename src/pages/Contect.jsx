@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
-
+import ContectBG from "../assets/contectUs.jpg"
 import emailjs from "@emailjs/browser";
 // useNavigate hook ko import karein
 import { useNavigate } from 'react-router-dom'; 
@@ -28,8 +28,8 @@ const Connect = () => {
     e.preventDefault();
 
     emailjs.send(
-      "service_lq2ng3r",     // EmailJS service ID
-      "template_b2yd829",    // EmailJS template ID
+      "service_zz75v0n",     // EmailJS service ID
+      "template_ue3z0rj",    // EmailJS template ID
       formData,
       "cRSuTQZ-JIDCuwin0"         // EmailJS user ID (public key)
     )
@@ -73,17 +73,17 @@ const Connect = () => {
     <title>Contact Us | Digify America</title>
 <meta name="description" content="Need help? Contact Digify America for support, services, or project discussions. We’re available 24/7." />
     </Helmet>
-    <div className="bg-[#D2C1B6] text-[#234C6A] min-h-screen font-sans antialiased">
+    <div className="bg-[#fff] text-[#234C6A] min-h-screen font-sans antialiased ">
       {/* Agar formSubmitted true hai toh modal dikhega, div ke andar nahi */}
       {formSubmitted && <ThankYouMessage />} 
       
       {/* Baki page content, agar formSubmitted true hai toh yeh content modal ke neeche dikhega */}
       
       {/* Main Form/Page Layout */}
-      <section
+      {/* <section
         className="relative h-96 lg:h-[70vh] bg-cover bg-center flex items-center justify-center text-white text-center"
         style={{
-          backgroundImage: `url('https://www.bluetent.com/wp-content/uploads/2014/02/blue-header-gather-e1458234243768.jpg')`,
+          backgroundImage: {ContectBG},
         }}
       >
         <div className="absolute inset-0 bg-[#000000c1] bg-opacity-60 z-10"></div>
@@ -95,19 +95,65 @@ const Connect = () => {
             We want to find solutions that fit your business needs.
           </p>
         </div>
-      </section>
+      </section> */}
+<div>
+  
+</div>
+      {/* Section Heading */}
+<div className="relative flex items-center justify-center  pt-50 py-10 overflow-hidden">
 
-      <h3 className='absolute text-gray-100 font-bold uppercase text-[3rem] fontplayfair mt-29 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap md:text-[10rem] lg:text-[11rem]'>
-        Get in Touch
-      </h3>
+  {/* Background Heading */}
+  <h2
+   className="
+  absolute
+  left-1/2
+  top-62
+  -translate-x-1/2
+  -translate-y-1/2
+  fontplayfair
+  font-bold
+  uppercase
+  whitespace-nowrap
+  text-[4rem]
+  md:text-[8rem]
+  lg:text-[7rem]
+  pointer-events-none
+  select-none
+  text-[#222]
+  opacity-6
+  tracking-[0.15em]
+  "
+  >
+    GET IN TOUCH
+  </h2>
 
-      <div className="container mx-auto px-4 py-46 sm:px-6 lg:px-8">
-        <div id="contact-form" className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-[29px] md:text-[50px] sm:text-3xl font-light fontplayfair text-[#1B3C53] leading-relaxed">
-            Tell us a little bit about your vacation rental business and one of our team of experts will be in touch shortly.
-          </p>
-        </div>
+  {/* Main Heading */}
+  <h3
+    className="
+      relative
+      z-10
+      text-center
+      fontplayfair
+      font-[400]
+      text-[#1B3C53]
+      text-[30px]
+      md:text-[50px]
+      lg:text-[60px]
+    "
+  >
+    Contact Us
+  </h3>
 
+</div>
+
+<div className="container mx-auto px-4 py-10 sm:px-6 lg:px-8">
+  <div id="contact-form" className="max-w-3xl mx-auto text-center">
+    <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+      Tell us a little bit about your vacation rental business and one of our
+      team of experts will be in touch shortly.
+    </p>
+  </div>
+</div>
         {/* FormSubmitted true hone par form ab yahan nahi dikhega, bas content chalta rahega */}
         {!formSubmitted && (
           <div className="bg-white mx-auto rounded-xl shadow-md overflow-hidden max-w-3xl p-6 sm:p-8">
@@ -164,7 +210,7 @@ const Connect = () => {
           </div>
         )}
       </div>
-    </div>
+    
      </>
   );
 };

@@ -13,7 +13,8 @@ import {
   PenTool,
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logo/dfm-Logo.png";
+import logoWhite from "../assets/logo/whiteLogo.png";
+import logoDark from "../assets/logo/blackLOGO.png";
 import { HashLink } from 'react-router-hash-link'; 
 
 export default function Navbar() {
@@ -63,6 +64,8 @@ export default function Navbar() {
   
   const isHome = location.pathname === "/";
   const textColor = isHome && !isScrolled ? "text-white" : "text-black";
+  const currentLogo =
+  isHome && !isScrolled ? logoWhite : logoDark;
 
   return (
     <>
@@ -76,7 +79,7 @@ export default function Navbar() {
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className={`flex items-center justify-between py-5 ${textColor}`}>
             {/* Desktop Nav */}
-            <nav className="hidden md:flex space-x-30 items-center flex-1">
+            <nav className="hidden md:flex space-x-15 items-center flex-1">
               <Link to="/about-us/" className="font-semibold text-[20px] ml-15">About</Link>
               {/* Dropdown */}
               <div className="relative group">
@@ -112,17 +115,24 @@ export default function Navbar() {
                 </div>
               </div>
               <Link to="/blogs/" className="font-semibold text-[20px]">Blog</Link>
+               <Link to="/#projects" className="font-semibold text-[20px]">Projects</Link>
             </nav>
 
             {/* Logo */}
             <div className="flex-shrink-0 mx-6">
               <Link to="/">
-                <img src={logo} alt="logo" className="h-10 md:h-18" />
+               <img
+  src={currentLogo}
+  alt="Digify America"
+  className="h-14 md:h-20 transition-all duration-300"
+ />
               </Link>
             </div>
 
             {/* Right side Desktop */}
+
             <div className="hidden md:flex flex-1 items-center justify-end space-x-6">
+
               <HashLink
                 to="/connect-with-us/#contact-form"
                 className="bg-[#234C6A] text-white px-5 py-2 rounded-lg font-bold text-lg mr-20 shadow-[0_4px_0px_#456882] transform transition-all duration-200 hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#fff] active:translate-y-[2px] active:shadow-none"
@@ -150,14 +160,30 @@ export default function Navbar() {
 
       {/* ⭐ 2. THE MOBILE MENU (Outside the header to fix z-index overlap) */}
       <div
-        className={`fixed top-0 right-0 h-full min-w-full bg-[#1B3C53] text-[#fff] transform transition-transform duration-300 ease-in-out z-[999] ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        className={`fixed bottom-8 right-0 h-full min-w-full bg-[#1B3C53] text-[#fff] transform transition-transform duration-300 ease-in-out z-[999] ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
       >
-        <div className="flex justify-end p-4">
-          <button onClick={closeMobileMenu}>
-            <X className="w-6 h-6" />
-          </button>
-        </div>
+         <div className="flex items-center justify-between p-4">
+  {/* Logo */}
+  <div className="flex-shrink-0 mx-2 mt-10">
+    <Link to="/">
+      <img
+        src={currentLogo}
+        alt="Digify America"
+        className="h-15 md:h-20 transition-all duration-300"
+      />
+    </Link>
+  </div>
+
+  {/* Close Button */}
+  <button
+    onClick={closeMobileMenu}
+    className="p-2"
+    aria-label="Close menu"
+  >
+    <X className="w-6 h-6" />
+  </button>
+</div>
 
         <nav className="flex flex-col space-y-3 px-6">
           {/* Link Close Fix */}
@@ -185,10 +211,10 @@ export default function Navbar() {
             )}
           </div>
 
-          {/* <Link to="/pricing/" className="py-2" onClick={closeMobileMenu}>Pricing</Link> */}
+          <Link to="/#projects" className="py-2" >Project</Link>
           <Link to="/blogs/" className="py-2" onClick={closeMobileMenu}>Blog</Link>
 
-          <div className="mt-4 space-y-2  border-gray-500 pt-4">
+          <div className="mt-4 space-y-2  border-gray-500 pt-4 ">
            <a href="tel:+1 7862242280"> <p className="flex items-center gap-2 text-sm">
               <Phone className="w-4 h-4" /> +1 786-224-2351
             </p></a>

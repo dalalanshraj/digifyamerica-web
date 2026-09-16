@@ -1,171 +1,284 @@
-import React from 'react';import { Helmet } from "react-helmet-async"; 
+import React from 'react';
+import { Helmet } from "react-helmet-async";
 
-// import blogImage1 from '../assets/blog-img/blog1.jpg'; // Removed as there is no image in the new content
-import blogImage1 from "../assets/blog-img/seo-7397379_1920.png";
-const BlogOne = () => {
+import blogImage1 from "/blogs/blogs6.webp";
+import { Link } from 'react-router-dom';
+
+const BlogSix = () => {
   return (
     <>
-    <Helmet>
-    <title>Modern SEO Best Practices | Improve Rankings in 2025</title>
-<meta name="description" content="Learn the latest SEO strategies, ranking factors, and optimization methods to grow organic traffic in 2025." />
+      <Helmet>
+        <title>On-Page vs Off-Page SEO: What's the Real Difference?</title>
 
-    </Helmet>
+        <meta
+          name="description"
+          content="Understand the real difference between on-page and off-page SEO, why both matter, and how to build a stronger SEO strategy."
+        />
+      </Helmet>
 
-    
-    <section className="bg-[#D2C1B6] text-[#234C6A]">
-      <div className="container mx-auto px-4 py-12 pt-34 ">
-        {/* Inner container for max width and a clean look */}
-        <div className=" max-w-4xl mx-auto ">
-          <h2 className="text-center text-[40px] font-[300] mx-19 fontplayfair text-[#1B3C53] leading-14 ">
-            Decoding Virality: The Psychology Behind Content That Spreads
-          </h2>
-          <br />
-         
-   
-        {/* Hero Image */}
-        <div className="flex justify-center mb-10">
-          <img 
-            src={blogImage1}
-            alt="SEO Best Practices" 
-            className="w-full max-w-4xl h-auto object-cover rounded-xl shadow-lg" 
-          />
-        </div>
-          <p className="text-xl leading-relaxed ">
-            Some videos or memes explode across the internet leaving us wonder, why that one? Why do some posts rack up millions of views overnight while others simply vanish? The secret has less to do with algorithms and more to do with <span className="text-[#1B3C53]">human psychology.</span>
-          </p>
+      <section className="bg-[#fff] text-[#234C6A]">
 
-          <p className="mt-4 leading-relaxed">
-            Viral content works because it taps into how people think, feel, and connect. Think of viral marketing as lighting a spark in a dry forest. The content matters but the emotion, timing, relatability <span className="text-[#1B3C53]">if it will catch fire.</span>
-          </p>
+        <div className="container mx-auto px-4 py-12 pt-34">
 
-          <p className="mt-4 leading-relaxed">
-            Let’s break down what really makes that spark turn into a wildfire.
-          </p>
+          <div className="max-w-4xl mx-auto">
 
-          <hr className="my-10 border-t-2 border-gray-200" />
+            {/* TITLE */}
 
-          {/* Point 1: Emotion drives engagement */}
-          <h2 className="text-3xl md:text-4xl font-[300] leading-tight Poppins-font mb-4">
-            <span className="text-[#fff] ">01.</span> Emotion drives engagement
-          </h2>
-          <p className="leading-relaxed">
-            The most shareable content <strong className='text-[#1B3C53]'>makes people feel.</strong> Studies show that emotional arousal, whether it’s laughter, awe, surprise, or even anger, dramatically increases sharing behavior.
-          </p>
-          <p className="leading-relaxed mt-4">
-            When you see a heartwarming ad about a dog finding its forever home, you connect emotionally. People share these moments because they want others to feel the same thing.
-          </p>
+            <h2 className="text-center text-[40px] font-[300] mx-19 fontplayfair text-[#1B3C53] leading-14">
 
-          <div className="bg-[#234C6A] p-6 rounded-lg my-6 border-l-4 border-[#fff] text-white">
-            <h3 className="text-xl font-semibold mb-2 ">To go viral, aim for:</h3>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Capturing emotion and not just attention.</li>
-              <li>Emotions like <strong className='text-white'>humor, inspiration, and empathy</strong> travel farther than sales pitches ever will.</li>
-            </ul>
-          </div>
-          
-          <hr className="my-10 border-t-2 border-gray-200" />
+              On-page vs off-page SEO: What's the real difference?
 
-          {/* Point 2: The power of social currency */}
-          <h2 className="text-3xl md:text-4xl font-[300] leading-tight Poppins-font mb-4">
-            <span className="text-[#fff] ">02.</span> The power of social currency
-          </h2>
-          <p className="leading-relaxed">
-            People love to share things that make them look <strong className='text-[#1B3C53]'>sharp, funny, or just a little more interesting.</strong> Psychologists refer to this as <strong className='text-[#1B3C53]'>social currency</strong> — the invisible value we get from the things we share.
-          </p>
-          
-          <div className="bg-[#234C6A] p-6 rounded-lg my-6 border-l-4 border-[#fff] text-white">
-            <h3 className="text-xl font-semibold mb-2 ">In marketing, tapping into that instinct is gold:</h3>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Give your audience something they’ll want to show others.</li>
-              <li>It can be a quirky graphic, a meme, or a story that reflects what they care about.</li>
-              <li>The goal isn’t to make your brand the star; it’s to make <strong className='text-white'>them</strong> the star.</li>
-            </ul>
-          </div>
-          <p className="leading-relaxed">
-            When people feel like sharing your content makes them look good or feel connected to something meaningful, they’ll do the marketing for you.
-          </p>
+            </h2>
 
-          <hr className="my-10 border-t-2 border-gray-200" />
+            <br />
 
-          {/* Point 3: Keep it simple because it works */}
-          <h2 className="text-3xl md:text-4xl font-[300] Poppins-font leading-tight mb-4">
-            <span className="text-[#fff] ">03.</span> Keep it simple because it works
-          </h2>
-          <p className="leading-relaxed">
-            If you think about the videos and campaigns that really take off online, they usually have one thing in common: they are <strong className='text-[#1B3C53]'>incredibly simple.</strong> The best ideas don’t make people think too hard — they make people <strong className='text-[#1B3C53]'>get it right away.</strong>
-          </p>
-          
-          <div className="bg-[#234C6A] p-6 rounded-lg my-6 border-l-4 border-[#fff] text-white">
-            <h3 className="text-xl font-semibold mb-2 ">Clarity is key:</h3>
-            <ul className="list-disc list-inside space-y-1">
-              <li>The more complicated a message is, the more effort it takes to process.</li>
-              <li>Simple ideas spread faster because they are easier to remember, explain, and share.</li>
-            </ul>
-          </div>
-          <p className="leading-relaxed">
-            Focus on the one emotion or idea you want people to take away. If you can explain it to a friend in a single sentence without stumbling, you have probably nailed it.
-          </p>
+            {/* HERO IMAGE */}
 
-          <hr className="my-10 border-t-2 border-gray-200" />
+            <div className="flex justify-center mb-10">
 
-          {/* Point 4: Timing and trends matter more than you think */}
-          <h2 className="text-3xl md:text-4xl font-[300] Poppins-font leading-tight mb-4">
-            <span className="text-[#fff] ">04.</span> Timing and trends matter more than you think
-          </h2>
-          <p className="leading-relaxed">
-            Even the smartest idea won’t go anywhere if it shows up at the wrong time. Going viral has as much to do with <strong className='text-[#1B3C53]'>timing</strong> as it does with creativity.
-          </p>
-          
-          <div className="bg-[#234C6A] p-6 rounded-lg my-6 border-l-4 border-[#fff] text-white">
-            <h3 className="text-xl font-semibold mb-2 ">How to win:</h3>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Success often depends on how well your message fits what people are <strong className='text-white'>already talking about.</strong></li>
-              <li>Add your own spin to existing trends.</li>
-              <li>Be flexible, respond quickly, and <strong className='text-white'>join conversations</strong> instead of trying to control them.</li>
-            </ul>
-          </div>
-          <p className="leading-relaxed">
-            The internet rewards brands that act human — spontaneous, aware, and genuinely part of the moment.
-          </p>
+              <img
+                src={blogImage1}
+                alt="On-page vs Off-page SEO"
+                className="w-full max-w-4xl h-auto object-cover rounded-xl shadow-lg"
+              />
 
-          <hr className="my-10 border-t-2 border-gray-200" />
+            </div>
 
-          {/* Point 5: Authenticity builds real connection */}
-          <h2 className="text-3xl md:text-4xl font-[300] Poppins-font leading-tight mb-4">
-            <span className="text-[#fff] ">05.</span> Authenticity builds real connection
-          </h2>
-          <p className="leading-relaxed">
-            You need to think beyond numbers. <strong className='text-[#1B3C53]'>Virality is about belonging.</strong> The content that people remember doesn’t feel like an ad; it feels like something they want to share because it says, “This is me.”
-          </p>
-          
-          <div className="bg-[#234C6A] p-6 rounded-lg my-6 border-l-4 border-[#fff] text-white">
-            <h3 className="text-xl font-semibold mb-2 ">Real connection comes from:</h3>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Content that feels <strong className='text-white'>honest</strong> — a messy behind-the-scenes video, a genuine thank-you, or a meaningful story.</li>
-              <li>People can spot insincerity instantly; overly polished content rarely goes far.</li>
-            </ul>
-          </div>
-          <p className="leading-relaxed">
-            Authenticity creates trust, and trust is what keeps people around long after the views and likes fade.
-          </p>
-          
-          <hr className="my-10 border-t-2 border-gray-200" />
+            {/* INTRO */}
 
-          {/* Conclusion */}
-          <div className="bg-[#234C6A] text-white p-8 rounded-xl mt-16 text-center shadow-2xl">
-            <h2 className="text-3xl md:text-4xl font-[300] mb-4 Poppins-font">Bringing it all together</h2>
-            <p className="text-lg leading-relaxed">
-              You don’t need magic but <strong className='text-white'>psychology in motion</strong> to create viral content. When you combine emotion, social currency, simplicity, timing, and authenticity, you create the kind of content people don’t just see—they <strong className='text-white'>feel compelled to share.</strong>
+            <p className="text-xl leading-relaxed">
+
+              Way too many people get stuck on this question. They treat
+              <strong> on-page </strong> and off-page SEO like they are two
+              completely different skill sets, when really, they are just two
+              sides of the same coin.
+
             </p>
-            <p className="text-lg leading-relaxed mt-4">
-              It’s like tossing a message in a bottle into the ocean of the internet. You can’t control every wave, but if the message resonates deeply enough, it will find its way to distant shores.
+
+            <p className="mt-4 leading-relaxed">
+
+              Think of it this way: on-page SEO is what you control directly on
+              your website. Off-page SEO? That's your reputation out there in
+              the wild internet. You need both, and honestly, one without the
+              other is pretty useless.
+
             </p>
+
+            <hr className="my-10 border-t-2 border-gray-200" />
+
+            {/* 01 */}
+
+            <h2 className="text-3xl md:text-4xl font-[300] leading-tight Poppins-font mb-4">
+
+              <span className="text-[#000]">01.</span> What is on-page SEO?
+
+            </h2>
+
+            <p className="leading-relaxed">
+
+              This is the stuff happening right on your site. Everything from
+              the words on your pages to how fast they load when someone clicks
+              through.
+
+            </p>
+
+            <p className="mt-4 leading-relaxed">
+
+              <strong className="text-[#1B3C53]">Keywords</strong> are still
+              important, but please stop cramming them everywhere. Use them
+              where they make sense: your headings, your actual content, your
+              meta descriptions. If it reads weird out loud, it's probably
+              over-optimized.
+
+            </p>
+
+            <p className="mt-4 leading-relaxed">
+
+              <strong className="text-[#1B3C53]">Meta tags and titles</strong>
+              {" "}might seem boring, but they are your first impression. When
+              someone sees your page in search results, that little snippet
+              needs to make them want to click. Keep it clear, keep it
+              relevant, and yeah, work your main keyword in there naturally.
+
+            </p>
+
+            <p className="mt-4 leading-relaxed">
+
+              <strong className="text-[#1B3C53]">Internal linking</strong> is
+              something people forget about constantly. You have got all this
+              great content on your site—help people (and Google) actually find
+              it by linking between related pages. It's not complicated, just
+              useful.
+
+            </p>
+
+            <p className="mt-4 leading-relaxed">
+
+              Then there's <strong className="text-[#1B3C53]">
+              content quality
+              </strong>, which honestly should just be called
+              <em> "writing stuff people actually want to read."</em>
+              Google's gotten pretty smart about detecting fluff. Write like
+              you are explaining something to a friend, not filling a word
+              count.
+
+            </p>
+
+            <p className="mt-4 leading-relaxed">
+
+              And if your site takes forever to load or looks broken on mobile?
+              Fix that first. Seriously. Nothing else matters if people leave
+              before your page even shows up.
+
+            </p>
+
+            <hr className="my-10 border-t-2 border-gray-200" />
+
+            {/* 02 */}
+
+            <h2 className="text-3xl md:text-4xl font-[300] leading-tight Poppins-font mb-4">
+
+              <span className="text-[#000]">02.</span> What is off-page SEO?
+
+            </h2>
+
+            <p className="leading-relaxed">
+
+              This is where things get interesting because you are not in full
+              control anymore.
+
+            </p>
+
+            <p className="mt-4 leading-relaxed">
+
+              <strong className="text-[#1B3C53]">Backlinks</strong> are the big
+              one. When another site links to you, it's basically telling
+              Google, "Hey, this page is legit." But quality matters way more
+              than quantity here. One link from a respected industry site beats
+              fifty links from random blogs nobody's heard of.
+
+            </p>
+
+            <p className="mt-4 leading-relaxed">
+
+              <strong className="text-[#1B3C53]">Brand mentions</strong> count
+              too, even without links. If people are talking about you, writing
+              about you, referencing you—that builds authority. It's like
+              word-of-mouth for the internet age.
+
+            </p>
+
+            <p className="mt-4 leading-relaxed">
+
+              <strong className="text-[#1B3C53]">Social media</strong> won't
+              directly boost your rankings (don't let anyone tell you
+              otherwise), but it drives traffic and gets eyes on your content.
+              And when people engage with your stuff, share it, talk about it?
+              That creates opportunities for backlinks and mentions.
+
+            </p>
+
+            <p className="mt-4 leading-relaxed">
+
+              <strong className="text-[#1B3C53]">PR and partnerships</strong>
+              {" "}fall into this category too. Getting featured in an article,
+              collaborating with someone in your space, being quoted as an
+              expert—all of that builds credibility that trickles back to your
+              SEO.
+
+            </p>
+
+            <p className="mt-4 leading-relaxed">
+
+              The thing about off-page SEO is you can't just manufacture it. You
+              earn it by consistently putting out good work and building real
+              relationships.
+
+            </p>
+
+            <hr className="my-10 border-t-2 border-gray-200" />
+
+            {/* 03 */}
+
+            <h2 className="text-3xl md:text-4xl font-[300] leading-tight Poppins-font mb-4">
+
+              <span className="text-[#000]">03.</span> Why you actually need
+              both
+
+            </h2>
+
+            <p className="leading-relaxed">
+
+              We have seen sites with perfect on-page optimization that barely
+              rank because nobody links to them. We have also seen sites with
+              tons of backlinks that tank because the actual site experience is
+              terrible.
+
+            </p>
+
+            <p className="mt-4 leading-relaxed">
+
+              You need your site to be solid—that's on-page. But you also need
+              the outside world to validate that you are worth paying attention
+              to—that's off-page.
+
+            </p>
+
+            <p className="mt-4 leading-relaxed">
+
+              One gets you ready. The other gets you noticed. Miss either piece
+              and you are leaving ranking potential on the table.
+
+            </p>
+
+            <hr className="my-10 border-t-2 border-gray-200" />
+
+            {/* FINAL TAKEAWAY */}
+
+            <div className="bg-[#234C6A] text-white p-8 rounded-xl mt-16 text-center shadow-2xl">
+
+              <h2 className="text-3xl md:text-4xl Poppins-font font-[300] mb-4">
+
+                The actual takeaway
+
+              </h2>
+
+              <p className="text-lg leading-relaxed">
+
+                Stop overthinking which one to focus on. Start with{" "}
+                <strong className="text-white">on-page</strong> because you can
+                control it and it needs to be done anyway. Then work on{" "}
+                <strong className="text-white">off-page</strong> by creating
+                content that's genuinely worth linking to and sharing.
+
+              </p>
+
+              <p className="text-lg leading-relaxed mt-4">
+
+                Don’t just play to an algorithm. SEO is about being genuinely
+                useful and building trust. Do that consistently, and the
+                rankings tend to follow. The sites that win long-term are the
+                ones people actually want to link to, share, and come back to.
+                Be one of those.
+
+              </p>
+
+              <Link
+                to={"/connect-with-us/#contact-form"}
+                className="inline-block bg-white text-[#234C6A] px-6 py-3 rounded-full font-semibold mt-6 hover:scale-105 transition"
+              >
+                Book a free 15-minute audit with our team →
+              </Link>
+
+            </div>
+
           </div>
+
         </div>
-      </div>
-    </section>
+
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default BlogOne;
+export default BlogSix;

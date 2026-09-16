@@ -2,7 +2,7 @@
 .font-exo2 {
   font-family: 'Exo 2', sans-serif;
 }
-
+ 
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -79,3 +79,23 @@ input[type=range]::-moz-range-thumb {
 .bg-conic {
   background: conic-gradient(#FAA533 0deg 180deg, #0BA6DF 180deg 360deg);
 } */
+.marquee {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  animation: marquee 20s linear infinite;
+}
+
+.group:hover .marquee {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

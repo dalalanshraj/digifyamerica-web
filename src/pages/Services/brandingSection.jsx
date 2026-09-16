@@ -1,6 +1,6 @@
 import React from 'react';import { Helmet } from "react-helmet-async"; 
 import { Palette, MessageSquare, Briefcase, FileText, RefreshCw, CheckCircle, Lightbulb, Star, Award, TrendingUp } from 'lucide-react';
-import heroImage from "../../assets/service-vector/brading.png"
+ 
 
 const BrandingSection = () => {
   return (
@@ -11,7 +11,7 @@ const BrandingSection = () => {
 
     </Helmet>
 
-     <section className="bg-[#D2C1B6] pt-30 text-[#234C6A] ">
+     <section className="bg-[#fff] pt-30 text-[#234C6A] ">
       {/* Hero Section */}
       <div className="container mx-auto max-w-7xl pt-16 pb-24 px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -33,41 +33,64 @@ const BrandingSection = () => {
           {/* Image */}
           <div className="order-1 lg:order-2 flex justify-center">
             <img
-              src={heroImage}
+              src="/service-vector/brading.webp"
               alt="Branding Illustration"
               className="w-[100vh] h-auto rounded-lg  object-cover"
             />
           </div>
         </div>
       </div>
-  <p className='
-  absolute 
-  text-gray-50 
-  font-bold 
-  uppercase 
-  // Mobile & Small Screens
-  text-[2.70rem] 
-  fontplayfair 
- mt-33
-  left-1/2 
-  -translate-x-1/2 
+  <div className="relative flex items-center justify-center py-20 overflow-hidden">
+
+  {/* Background Heading */}
+  <p
+   className="
+  absolute
+  left-1/2
+  top-1/2
+  -translate-x-1/2
   -translate-y-1/2
-  whitespace-nowrap 
-  
-  // Medium Screens (md)
-  md:text-[10rem] 
-  
-  // Large Screens (lg)
-  lg:text-[9rem] 
-'>
-        What We Offer
-      </p>
+  fontplayfair
+  font-bold
+  uppercase
+  whitespace-nowrap
+  text-[4rem]
+  md:text-[8rem]
+  lg:text-[7rem]
+  pointer-events-none
+  select-none
+  text-[#222]
+  opacity-6
+  tracking-[0.15em]
+  "
+  >
+    WHAT WE OFFER
+  </p>
+
+  {/* Main Heading */}
+  <h3
+    className="
+      relative
+      z-10
+      text-center
+      fontplayfair
+      font-[400]
+      text-[#1B3C53]
+      text-[30px]
+      md:text-[50px]
+      lg:text-[60px]
+    "
+  >
+    What We Offer
+  </h3>
+
+</div>
       {/* What We Offer Section */}
-      <div className="bg-[#ad9a9a35] py-42 px-4 md:px-8">
+      <div className="  px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center whitespace-nowrap pt-6 text-[29px] md:text-[50px] font-[300] mx-19 fontplayfair text-[#1B3C53]">
+          {/* <h2 className="text-center whitespace-nowrap pt-6 text-[29px] md:text-[50px] font-[300] mx-19 fontplayfair text-[#1B3C53]">
             What We Offer
-          </h2>
+          </h2> */}
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-10">
             We take a comprehensive approach to branding that sets you up to win across every customer touchpoint. From the first impression to the follow-up email, we have the complete list.
           </p>
@@ -120,34 +143,57 @@ const BrandingSection = () => {
           </div>
         </div>
       </div>
-<p className='
-  absolute 
-  text-gray-100 
-  font-bold 
-  uppercase 
-  // Mobile & Small Screens
-  text-[2rem] 
-  fontplayfair 
- mt-33
-  left-1/2 
-  -translate-x-1/2 
+ <div className="relative flex items-center justify-center py-20 overflow-hidden">
+
+  {/* Background Heading */}
+  <p
+   className="
+  absolute
+  left-1/2
+  top-1/2
+  -translate-x-1/2
   -translate-y-1/2
-  whitespace-nowrap 
-  
-  // Medium Screens (md)
-  md:text-[10rem] 
-  
-  // Large Screens (lg)
-  lg:text-[7rem] 
-'>
-       Why Digify America?
-      </p>
+  fontplayfair
+  font-bold
+  uppercase
+  whitespace-nowrap
+  text-[4rem]
+  md:text-[8rem]
+  lg:text-[6rem]
+  pointer-events-none
+  select-none
+  text-[#222]
+  opacity-6
+  tracking-[0.15em]
+  "
+  >
+    WHY DIGIFY AMERICA
+  </p>
+
+  {/* Main Heading */}
+  <h3
+    className="
+      relative
+      z-10
+      text-center
+      fontplayfair
+      font-[400]
+      text-[#1B3C53]
+      text-[30px]
+      md:text-[50px]
+      lg:text-[60px]
+    "
+  >
+     Digify America?
+  </h3>
+
+</div>
       {/* Why Digify America? */}
-      <div className="py-39 px-4 md:px-8">
+      <div className=" px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h3 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
+          {/* <h3 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
             Why Digify America?
-          </h3>
+          </h3> */}
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
             Here’s what makes us different from every freelancer or template-hawking design agency:
           </p>

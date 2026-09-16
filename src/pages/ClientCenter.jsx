@@ -10,7 +10,7 @@ const ClientCenter = () => {
     <section
                   className="relative h-[100vh] bg-cover bg-center flex items-center justify-center text-white text-center px-40"
                   style={{
-                    backgroundImage: `url("https://www.bluetent.com/wp-content/uploads/2021/01/EmailPageHeader.png")`,
+                    backgroundImage: `url("https://www.bluetent.com/wp-content/uploads/2021/01/EmailPageHeader.webp")`,
                   }}
                 >
                   <div className="absolute inset-0 bg-[#000000c1] bg-opacity-60 z-0"></div>

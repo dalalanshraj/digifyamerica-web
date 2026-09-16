@@ -2,7 +2,7 @@
 # 1️⃣ Enable HSTS (Strict HTTPS)
 # -----------------------------------------
 <IfModule mod_headers.c>
-Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
 </IfModule>
 
 # -----------------------------------------
@@ -11,7 +11,7 @@ Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains
 RewriteEngine On
 
 # -----------------------------------------
-# 3️⃣ Force HTTPS + WWW (Correct Safe Version)
+# 3️⃣ Force HTTPS + WWW
 # -----------------------------------------
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} !^www\.digifyamerica\.com$ [NC]
@@ -23,6 +23,7 @@ RewriteRule ^(.*)$ https://www.digifyamerica.com/$1 [L,R=301]
 RewriteBase /
 
 RewriteRule ^index\.html$ - [L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]

@@ -296,7 +296,7 @@ function Pricing() {
         </Helmet>
 
 
-            <section className='bg-[#D2C1B6] min-h-screen text-[#234C6A]'>
+            <section className='bg-[#fff] min-h-screen text-[#234C6A]'>
                 <div className="container text-[#234C6A] max-w-screen-lg mx-auto p-5 pt-20 ">
                     <ProgressBar currentStep={currentStep} totalSteps={totalSteps} totalPrice={totalPrice} />
                     <div id="headings" className="text-center">

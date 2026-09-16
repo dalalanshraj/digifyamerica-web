@@ -1,6 +1,6 @@
 import React from 'react';import { Helmet } from "react-helmet-async"; 
 import { CheckCircle, MessageSquare, CalendarDays, Edit, Users, TrendingUp, BarChart2, Star, Sparkles } from 'lucide-react';
-import heroImage from "../../assets/service-vector/socialMedia.png"
+ 
 
 const SocialMedia = () => {
   return (
@@ -11,7 +11,7 @@ const SocialMedia = () => {
 
 </Helmet>
 
-  <section className="bg-[#D2C1B6] pt-30 text-[#234C6A] ">
+  <section className="bg-[#fff] pt-30 text-[#234C6A] ">
       {/* Hero Section */}
       <div className="container mx-auto max-w-7xl pt-16 pb-24 px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -32,41 +32,64 @@ const SocialMedia = () => {
           {/* Image */}
           <div className="order-1 lg:order-2 flex justify-center">
             <img
-              src={heroImage}
+              src="/service-vector/socialMedia.webp"
               alt="Social Media Marketing Illustration"
               className="w-[100vh] h-auto rounded-lg  object-cover"
             />
           </div>
         </div>
       </div>
-      <p className='
-  absolute 
-  text-gray-50 
-  font-bold 
-  uppercase 
-  // Mobile & Small Screens
-  text-[2.70rem] 
-  fontplayfair 
- mt-33
-  left-1/2 
-  -translate-x-1/2 
+    <div className="relative flex items-center justify-center py-20 overflow-hidden">
+
+  {/* Background Heading */}
+  <p
+   className="
+  absolute
+  left-1/2
+  top-1/2
+  -translate-x-1/2
   -translate-y-1/2
-  whitespace-nowrap 
-  
-  // Medium Screens (md)
-  md:text-[10rem] 
-  
-  // Large Screens (lg)
-  lg:text-[9rem] 
-'>
-        What We Offer
-      </p>
+  fontplayfair
+  font-bold
+  uppercase
+  whitespace-nowrap
+  text-[4rem]
+  md:text-[8rem]
+  lg:text-[7rem]
+  pointer-events-none
+  select-none
+  text-[#222]
+  opacity-6
+  tracking-[0.15em]
+  "
+  >
+    WHAT WE OFFER
+  </p>
+
+  {/* Main Heading */}
+  <h3
+    className="
+      relative
+      z-10
+      text-center
+      fontplayfair
+      font-[400]
+      text-[#1B3C53]
+      text-[30px]
+      md:text-[50px]
+      lg:text-[60px]
+    "
+  >
+    What We Offer
+  </h3>
+
+</div>
       {/* What We Offer Section */}
-      <div className=" py-42 px-4 md:px-8">
+      <div className=" px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center pt-5 whitespace-nowrap text-[29px] md:text-[50px] font-[300] mx-19 fontplayfair text-[#1B3C53]">
+          {/* <h2 className="text-center pt-5 whitespace-nowrap text-[29px] md:text-[50px] font-[300] mx-19 fontplayfair text-[#1B3C53]">
             What We Offer
-          </h2>
+          </h2> */}
           <p className="max-w-4xl mx-auto text-lg  text-center mb-10">
             Here’s what you need for digital success and what we deliver:
           </p>
@@ -128,34 +151,57 @@ const SocialMedia = () => {
           </div>
         </div>
       </div>
-<p className='
-  absolute 
-  text-gray-100 
-  font-bold 
-  uppercase 
-  // Mobile & Small Screens
-  text-[2rem] 
-  fontplayfair 
- mt-33
-  left-1/2 
-  -translate-x-1/2 
+  <div className="relative flex items-center justify-center py-20 overflow-hidden">
+
+  {/* Background Heading */}
+  <p
+   className="
+  absolute
+  left-1/2
+  top-1/2
+  -translate-x-1/2
   -translate-y-1/2
-  whitespace-nowrap 
-  
-  // Medium Screens (md)
-  md:text-[10rem] 
-  
-  // Large Screens (lg)
-  lg:text-[7rem] 
-'>
-       Why Digify America?
-      </p>
+  fontplayfair
+  font-bold
+  uppercase
+  whitespace-nowrap
+  text-[4rem]
+  md:text-[8rem]
+  lg:text-[6rem]
+  pointer-events-none
+  select-none
+  text-[#222]
+  opacity-6
+  tracking-[0.15em]
+  "
+  >
+    WHY DIGIFY AMERICA
+  </p>
+
+  {/* Main Heading */}
+  <h3
+    className="
+      relative
+      z-10
+      text-center
+      fontplayfair
+      font-[400]
+      text-[#1B3C53]
+      text-[30px]
+      md:text-[50px]
+      lg:text-[60px]
+    "
+  >
+     Digify America?
+  </h3>
+
+</div>
       {/* Why Digify America? */}
-      <div className="py-40 px-4 md:px-8">
+      <div className=" px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h3 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
+          {/* <h3 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
             Why Digify America?
-          </h3>
+          </h3> */}
           <p className="max-w-4xl mx-auto text-lg  text-center mb-8">
             Anyone can toss up content. But very few agencies take the time to actually understand your business, your voice, and your goals. Here’s how we are different:
           </p>
@@ -186,7 +232,7 @@ const SocialMedia = () => {
           Let’s Get Social—Strategically
         </h4>
         <p className="max-w-3xl mx-auto text-lg mb-6">
-         <o className="border-2 border-[#fff] bg-[#D2C1B6] text-black uppercase " >Social media is powerful growth tool.</o> Let’s build you a custom social media strategy that connects, converts, and grows with your business.
+         <o className="border-2 border-[#fff] bg-[#fff] text-black uppercase " >Social media is powerful growth tool.</o> Let’s build you a custom social media strategy that connects, converts, and grows with your business.
         </p>
         {/* <a
           href="#"

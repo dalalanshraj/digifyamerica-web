@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { Helmet } from "react-helmet-async";
 import { ChevronDown } from "lucide-react";
-import blogImage from "../assets/blog-img/blogs.jpg";
+import blogImage from "/blogs/blogs1.webp";
 
  const faqs = [
   {
@@ -91,7 +91,7 @@ const FaqSection = () => {
 <meta name="description" content="Find answers to common questions about our services, pricing, support, and processes." />
 
     </Helmet>
-    <section className="bg-[#D2C1B6] text-[#234C6A]">
+    <section className="bg-[#fff] text-[#234C6A]">
 
       {/* HERO SECTION */}
       <section
@@ -130,7 +130,7 @@ const FaqSection = () => {
 '>
        Frequently Asked Questions
       </h1>
-      <section   className="features-section bg-[#D2C1B6] py-32 px-4 text-center ">
+      <section   className="features-section bg-[#fff] py-32 px-4 text-center ">
         <h2 className="text-[28px] md:text-[60px] font-[600] fontplayfair  text-[#1B3C53] mb-11">
        FAQ
       </h2>
