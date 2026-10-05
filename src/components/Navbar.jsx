@@ -134,7 +134,7 @@ export default function Navbar() {
             <div className="hidden md:flex flex-1 items-center justify-end space-x-6">
 
               <HashLink
-                to="/connect-with-us/#contact-form"
+                to="/contact/"
                 className="bg-[#234C6A] text-white px-5 py-2 rounded-lg font-bold text-lg mr-20 shadow-[0_4px_0px_#456882] transform transition-all duration-200 hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#fff] active:translate-y-[2px] active:shadow-none"
               >
                 Contact Us
@@ -221,7 +221,7 @@ export default function Navbar() {
            <a href="mailto:contact@digifyamerica.com"> <p className="flex items-center gap-2 text-sm">
               <Mail className="w-4 h-4" /> contact@digifyamerica.com
             </p></a>
-            <HashLink to="/connect-with-us/#contact-form" className="block mt-3 bg-[#234C6A] text-white px-5 py-2 rounded-lg 
+            <HashLink to="/contact/" className="block mt-3 bg-[#234C6A] text-white px-5 py-2 rounded-lg 
                 font-bold text-lg shadow-[0_4px_0px_#456882] transform transition-all 
                 duration-200 hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#fff] active:translate-y-[2px] 
                 active:shadow-none" onClick={closeMobileMenu}>

@@ -301,7 +301,7 @@ const BlogThirtyFour = () => {
               </p>
 
               <Link
-                to={"/connect-with-us/#contact-form"}
+                to={"/contact/"}
                 className="inline-block mt-6 bg-white text-[#234C6A] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition"
               >
                 Connect with our team

@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
-import blogImage5 from "/blogs/blogs10.webp";
+ 
 
 const BlogTen = () => {
   return (
@@ -32,7 +32,7 @@ const BlogTen = () => {
 
             <div className="flex justify-center mb-10">
               <img
-                src={blogImage5}
+                src="/blogs/blogs10.webp"
                 alt="How to Define Your Brand Voice for Social Media"
                 className="w-full max-w-4xl h-auto object-cover rounded-xl shadow-lg"
               />
@@ -277,7 +277,7 @@ const BlogTen = () => {
               </p>
 
               <Link
-                to={"/connect-with-us/#contact-form"}
+                to={"/contact/"}
                 className="inline-block bg-white text-[#234C6A] px-6 py-3 rounded-full font-semibold mt-6 hover:scale-105 transition"
               >
                 Book a free 15-minute audit with our team →

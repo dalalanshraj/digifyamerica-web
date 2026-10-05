@@ -18,7 +18,7 @@ export default function Footer() {
           </h1>
 
           <HashLink
-            to="/connect-with-us/#contact-form"
+            to="/contact/"
             className="bg-[#234C6A] text-white px-5 py-2 rounded-lg font-bold text-lg shadow transition hover:scale-105"
           >
             Contact Our Team
@@ -116,7 +116,7 @@ export default function Footer() {
                 <Link to="/faq">FAQ</Link>
               </li>
               <li>
-                <Link to="/blogs">Blog</Link>
+                <Link to="/blogs/">Blog</Link>
               </li>
               <li>
                 <Link to="/24/7-Support/">24/7 Support</Link>
@@ -130,7 +130,7 @@ export default function Footer() {
               </li>
 
               <li>
-                <HashLink to="/connect-with-us/#contact-form">Contact</HashLink>
+                <HashLink to="/contact/">Contact</HashLink>
               </li>
             </ul>
           </div>

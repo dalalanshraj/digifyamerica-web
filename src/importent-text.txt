@@ -54,13 +54,13 @@
 //         <Route path="/owner-acquisition-strategy/" element={<OwnerAcquisitionStrategy />} />
 //         <Route path="/pricing/" element={<Pricing />} />
 //         <Route path="/boost/" element={<Boost />} />
-//         <Route path="/blogs/" element={<Blogs />} />
+//         <Route path="/blogs" element={<Blogs />} />
 //         <Route path="/modern-seo-best-practices" element={<BlogOne />} />
 //         <Route path="/your-website-is-boring" element={<BlogTwo/>}/>
 //         <Route path="/psychology-of-branding" element={<BlogThree />}/>
 //         <Route path="/social-media-that-sells" element={<BlogFour />}/>
 //         <Route path="/digital-first-impressions" element={<BlogFive />}/>
-//         {/* <Route path="/blogs/:slug" element={<BlogPostPage />} /> */}
+//         {/* <Route path="/blogs:slug" element={<BlogPostPage />} /> */}
 //         <Route path="/client-center/" element={<ClientCenter />} />
 //         <Route path="/connect-with-us/" element={<Connect />} />
 //         <Route path="/privacy-policy/" element={<PrivacyPolicy />} />

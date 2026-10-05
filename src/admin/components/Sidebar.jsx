@@ -34,7 +34,7 @@ export default function Sidebar() {
         </Link>
 
         <Link
-          to="/admin/blogs/create"
+          to="/admin/blogscreate"
           className="block px-4 py-3 rounded hover:bg-[#11234d]"
         >
           Create Blog

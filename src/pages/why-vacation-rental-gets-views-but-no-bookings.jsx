@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import blogImage34 from "/blogs/blogs34.webp";
+ 
 import { Link } from "react-router-dom";
 
 const BlogThirtyFour = () => {
@@ -38,7 +38,7 @@ const BlogThirtyFour = () => {
 
             <div className="flex justify-center mb-10">
               <img
-                src={blogImage34}
+                src="/blogs/blogs34.webp"
                 alt="Why Your Vacation Rental Is Getting Views But No Bookings"
                 className="w-full max-w-4xl h-auto object-cover rounded-xl shadow-lg"
               />
@@ -304,7 +304,7 @@ const BlogThirtyFour = () => {
               </p>
 
               <Link
-                to={"/connect-with-us/#contact-form"}
+                to={"/contact/"}
                 className="inline-block mt-6 bg-white text-[#234C6A] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition"
               >
                 Let’s connect.

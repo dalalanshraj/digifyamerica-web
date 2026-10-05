@@ -13,7 +13,7 @@
 
 //   const fetchBlogs = async () => {
 //     try {
-//       const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/blogs`);
+//       const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/blogs/blogs`);
 
 //       console.log("BLOG RESPONSE:", res.data);
 
@@ -57,7 +57,7 @@
 //                 <div className="relative">
 //                   {blog.featuredImage ? (
 //                     <img
-//                       src={`${import.meta.env.VITE_API_URL}/uploads/blogs/${blog.featuredImage}`}
+//                       src={`${import.meta.env.VITE_API_URL}/uploads/blogs/blogs${blog.featuredImage}`}
 //                       alt={blog.title}
 //                       className="w-full h-[250px] object-cover"
 //                       onError={(e) => {
@@ -100,6 +100,83 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 const blogs = [
+  {
+  slug: "/seo-after-keywords-why-being-useful-matters-more-than-repeating-search-terms",
+  title:
+    "SEO after keywords: why being useful matters more than repeating search terms",
+  desc:
+    "Learn why SEO in 2026 is moving beyond keyword repetition and how search intent, useful content, experience, and people-first SEO can create stronger search visibility.",
+  date: "October 6, 2026",
+  image: "/blogs/blogs64.webp",
+},
+  {
+  slug: "/can-ai-recommend-your-vacation-rental",
+  title:
+    "Can AI recommend your vacation rental? How properties can become visible in AI search",
+  desc:
+    "Learn how vacation rentals can become more visible in AI search through clear property information, useful content, local context, visual information, and strong SEO foundations.",
+  date: "October 6, 2026",
+  image: "/blogs/blogs63.webp",
+},
+  {
+  slug: "/how-ai-search-is-changing-seo-in-2026",
+  title:
+    "How AI search is changing SEO in 2026: What website owners need to know",
+  desc:
+    "Learn how AI search is changing SEO in 2026, why useful original content matters, and what website owners should do to stay visible in AI-powered search.",
+  date: "October 6, 2026",
+  image: "/blogs/blogs62.webp",
+},
+  {
+  slug: "/what-should-a-vacation-rental-website-include",
+  title: "What should a vacation rental website include?",
+  desc:
+    "Discover what a vacation rental website should include, from property information and booking functionality to mobile design, SEO, trust signals, and useful destination content.",
+  date: "September 29, 2026",
+  image: "/blogs/blogs61.webp",
+},
+  {
+  slug: "/how-to-improve-conversion-on-a-vacation-rental-website",
+  title: "How to improve conversion on a vacation rental website",
+  desc:
+    "Learn how to improve vacation rental website conversion, reduce booking friction, improve the mobile experience, and turn more website visitors into direct bookings.",
+  date: "September 29, 2026",
+  image: "/blogs/blogs60.webp",
+},
+  {
+  slug: "/vacation-rental-seo-what-helps-a-property-get-found",
+  title: "Vacation rental SEO: What helps a property get found?",
+  desc:
+    "Learn what helps a vacation rental website get found on Google, from relevant searches and local SEO to technical foundations, internal links, and useful content.",
+  date: "September 29, 2026",
+  image: "/blogs/blogs59.webp",
+},
+  {
+  slug: "/how-much-does-a-vacation-rental-website-cost",
+  title: "How much does a vacation rental website cost?",
+  desc:
+    "Learn how much a vacation rental website costs, what affects vacation rental website pricing, and what to consider when choosing a direct booking website.",
+  date: "September 23, 2026",
+  image: "/blogs/blogs58.webp",
+},
+  {
+  slug: "/are-google-ads-worth-it-for-vacation-rentals-what-owners-should-know",
+  title:
+    "Are Google Ads worth it for vacation rentals? What owners should know",
+  desc:
+    "Learn how Google Ads can help vacation rentals reach relevant guests, increase direct bookings, and measure advertising performance beyond clicks.",
+  date: "September 23, 2026",
+  image: "/blogs/blogs57.webp",
+},
+  {
+  slug: "/you-have-a-vacation-rental-website-so-why-arent-guests-booking-direct",
+  title:
+    "You have a vacation rental website. So why aren't guests booking direct?",
+  desc:
+    "Learn why your vacation rental website may not be getting direct bookings and how to improve visibility, trust, conversion, SEO, and the booking experience.",
+  date: "September 23, 2026",
+  image: "/blogs/blogs56.webp",
+},
   {
   slug: "/guest-just-cancelled-heres-exactly-what-to-do-in-the-next-24-hours",
   title:

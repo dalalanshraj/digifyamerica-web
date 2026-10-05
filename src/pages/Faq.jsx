@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { Helmet } from "react-helmet-async";
 import { ChevronDown } from "lucide-react";
-import blogImage from "/blogs/blogs1.webp";
+ 
 
  const faqs = [
   {
@@ -97,7 +97,7 @@ const FaqSection = () => {
       <section
         loading="lazy"
         className="relative h-[60vh] bg-cover bg-center flex items-center justify-center text-white text-center overflow-hidden"
-        style={{ backgroundImage: `url(${blogImage})` }}
+       style={{ backgroundImage: 'url("/blogs/blogs1.webp")' }}
       >
         <div className="absolute inset-0 bg-[#000000c1] z-10"></div>
 

@@ -141,7 +141,7 @@ function Home() {
 
             {/* CTA Buttons */}
             <div className="mt-8 flex flex-wrap gap-4 justify-center">
-              <Link to={"/connect-with-us/"}>
+              <Link to={"/contact/"}>
                 <button className="bg-[#456882] hover:bg-[#36576c] px-6 py-3 rounded-xl text-white cursor-pointer font-semibold transition">
                   Get Free Booking Audit
                 </button>
@@ -169,7 +169,7 @@ function Home() {
               bookings you’re leaving on the table.
             </p>
             <HashLink
-              to="/connect-with-us/#contact-form"
+              to="/contact/"
               className="bg-[#234C6A] text-white px-5 py-2 rounded-lg font-bold text-lg 
              shadow-[0_4px_0px_#456882] 
              transform transition-all duration-200 

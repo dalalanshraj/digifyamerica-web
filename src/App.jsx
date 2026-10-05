@@ -26,7 +26,7 @@ import EditBlog from "./admin/pages/EditBlog";
 // import Blogs from "./pages/Blogs";
 import SingleBlog from "./pages/SingleBlog";
 import BlogThirtyTwo from "./pages/why-vacation-rental-gets-views-but-no-bookings.jsx";
-import BlogThirtyThree from "./pages/Home/relying-solely-on-third-party-rental-platforms-is-risky.jsx";
+import BlogThirtyThree from "./pages/relying-solely-on-third-party-rental-platforms-is-risky.jsx";
 import BlogThirtyFour from "./pages/set-jetting-tv-and-film-tourism-vacation-rentals-2026.jsx";
 import BlogThirtyFive from "./pages/vacation-rental-occupancy-rates-dropping-2026.jsx";
 import BlogThirtySix from "./pages/how-to-build-a-vacation-rental-brand.jsx";
@@ -49,93 +49,101 @@ import BlogFiftyTwo from "./pages/how-to-market-your-vacation-rental-to-internat
 import BlogFiftyThree from "./pages/the-vacation-rental-owners-guide-to-pricing-cleaning-fee.jsx";
 import BlogFiftyFour from "./pages/how-to-use-vacation-rental-guest-reviews-as-marketing-content.jsx";
 import BlogFiftyFive from "./pages/guest-just-cancelled-heres-exactly-what-to-do-in-the-next-24-hours.jsx";
- 
-const BlogEleven = lazy(() =>
-  import("./pages/ai-for-vacation-rental-bookings.jsx")
+import BlogFiftySix from "./pages/you-have-a-vacation-rental-website-so-why-arent-guests-booking-direct.jsx";
+import BlogFiftySeven from "./pages/are-google-ads-worth-it-for-vacation-rentals-what-owners-should-know.jsx";
+import BlogFiftyEight from "./pages/how-much-does-a-vacation-rental-website-cost.jsx";
+import BlogFiftyNine from "./pages/vacation-rental-seo-what-helps-a-property-get-found.jsx";
+import BlogSixty from "./pages/how-to-improve-conversion-on-a-vacation-rental-website.jsx";
+import BlogSixtyOne from "./pages/what-should-a-vacation-rental-website-include.jsx";
+import BlogSixtyTwo from "./pages/how-ai-search-is-changing-seo-in-2026.jsx";
+import BlogSixtyThree from "./pages/can-ai-recommend-your-vacation-rental.jsx";
+import BlogSixtyFour from "./pages/seo-after-keywords-why-being-useful-matters-more-than-repeating-search-terms.jsx";
+
+const BlogEleven = lazy(
+  () => import("./pages/ai-for-vacation-rental-bookings.jsx"),
 );
 
-const BlogTwelve = lazy(() =>
-  import("./pages/7-reasons-guests-book-vacation-rentals.jsx")
+const BlogTwelve = lazy(
+  () => import("./pages/7-reasons-guests-book-vacation-rentals.jsx"),
 );
 
-const BlogThirteen = lazy(() =>
-  import("./pages/vacation-rental-listing-optimizatio.jsx")
+const BlogThirteen = lazy(
+  () => import("./pages/vacation-rental-listing-optimizatio.jsx"),
 );
 
-const BlogFourteen = lazy(() =>
-  import("./pages/dynamic-pricing-for-vacation-rentals.jsx")
+const BlogFourteen = lazy(
+  () => import("./pages/dynamic-pricing-for-vacation-rentals.jsx"),
 );
 
-const BlogFifteen = lazy(() =>
-  import("./pages/vacation-rental-guest-experience.jsx")
+const BlogFifteen = lazy(
+  () => import("./pages/vacation-rental-guest-experience.jsx"),
 );
 
-const BlogSixteen = lazy(() =>
-  import("./pages/improve-vacation-rental-occupancy-rate.jsx")
+const BlogSixteen = lazy(
+  () => import("./pages/improve-vacation-rental-occupancy-rate.jsx"),
 );
 
-const BlogSeventeen = lazy(() =>
-  import("./pages/top-features-vacation-rental-website-2026.jsx")
+const BlogSeventeen = lazy(
+  () => import("./pages/top-features-vacation-rental-website-2026.jsx"),
 );
 
-const BlogEighteen = lazy(() =>
-  import("./pages/BlogEighteen.jsx")
+const BlogEighteen = lazy(() => import("./pages/BlogEighteen.jsx"));
+
+const BlogNineteen = lazy(
+  () => import("./pages/vacation-rental-web-design-agency.jsx"),
 );
 
-const BlogNineteen = lazy(() =>
-  import("./pages/vacation-rental-web-design-agency.jsx")
+const BlogTwenty = lazy(
+  () => import("./pages/fifa-world-cup-vacation-rental-marketing.jsx"),
 );
 
-const BlogTwenty = lazy(() =>
-  import("./pages/fifa-world-cup-vacation-rental-marketing.jsx")
+const BlogTwentyOne = lazy(
+  () => import("./pages/short-term-rental-regulations-2026.jsx"),
 );
 
-const BlogTwentyOne = lazy(() =>
-  import("./pages/short-term-rental-regulations-2026.jsx")
+const BlogTwentyTwo = lazy(
+  () => import("./pages/last-minute-bookings-vacation-rental.jsx"),
 );
 
-const BlogTwentyTwo = lazy(() =>
-  import("./pages/last-minute-bookings-vacation-rental.jsx")
+const BlogTwentyThree = lazy(
+  () => import("./pages/farm-stays-rural-rentals-booming-2026.jsx"),
 );
 
-const BlogTwentyThree = lazy(() =>
-  import("./pages/farm-stays-rural-rentals-booming-2026.jsx")
+const BlogTwentyFour = lazy(
+  () => import("./pages/micro-trips-weekend-getaways.jsx"),
 );
 
-const BlogTwentyFour = lazy(() =>
-  import("./pages/micro-trips-weekend-getaways.jsx")
+const BlogTwentyFive = lazy(
+  () => import("./pages/summer-vacation-rental-marketing.jsx"),
 );
 
-const BlogTwentyFive = lazy(() =>
-  import("./pages/summer-vacation-rental-marketing.jsx")
+const BlogTwentySix = lazy(
+  () =>
+    import("./pages/how-to-write-vacation-rental-description-that-converts.jsx"),
 );
 
-const BlogTwentySix = lazy(() =>
-  import("./pages/how-to-write-vacation-rental-description-that-converts.jsx")
+const BlogTwentySeven = lazy(
+  () => import("./pages/pet-friendly-vacation-rentals.jsx"),
 );
 
-const BlogTwentySeven = lazy(() =>
-  import("./pages/pet-friendly-vacation-rentals.jsx")
+const BlogTwentyEight = lazy(
+  () => import("./pages/how-to-attract-remote-work-travelers.jsx"),
 );
 
-const BlogTwentyEight = lazy(() =>
-  import("./pages/how-to-attract-remote-work-travelers.jsx")
+const BlogTwentyNine = lazy(
+  () => import("./pages/how-to-price-vacation-rental-holiday-weekends.jsx"),
 );
 
-const BlogTwentyNine = lazy(() =>
-  import("./pages/how-to-price-vacation-rental-holiday-weekends.jsx")
+const BlogThirty = lazy(
+  () => import("./pages/how-to-handle-negative-reviews-vacation-rental.jsx"),
 );
 
-const BlogThirty = lazy(() =>
-  import("./pages/how-to-handle-negative-reviews-vacation-rental.jsx")
+const BlogThirtyOne = lazy(
+  () => import("./pages/vacation-rental-photography-tips.jsx"),
 );
 
-const BlogThirtyOne = lazy(() =>
-  import("./pages/vacation-rental-photography-tips.jsx")
-);
-
-const TopFeaturesVacationRentalWebsite2026 = lazy(() =>
-  import("./pages/top-features-vacation-rental-website-2026.jsx")
+const TopFeaturesVacationRentalWebsite2026 = lazy(
+  () => import("./pages/top-features-vacation-rental-website-2026.jsx"),
 );
 
 // ✅ Lazy imports (only pages)
@@ -290,110 +298,189 @@ function App() {
             path="/vacation-rental-web-design-agency"
             element={<BlogNineteen />}
           />
-           <Route
+          <Route
             path="/fifa-world-cup-vacation-rental-marketing"
             element={<BlogTwenty />}
           />
-           <Route
+          <Route
             path="/short-term-rental-regulations-2026"
             element={<BlogTwentyOne />}
           />
-           <Route
+          <Route
             path="/last-minute-bookings-vacation-rental"
             element={<BlogTwentyTwo />}
           />
-           <Route
+          <Route
             path="/farm-stays-rural-rentals-booming-2026"
-            element={<BlogTwentyThree/>}
+            element={<BlogTwentyThree />}
           />
           <Route
             path="/micro-trips-weekend-getaways"
-            element={<BlogTwentyFour/>}
+            element={<BlogTwentyFour />}
           />
-           <Route
+          <Route
             path="/summer-vacation-rental-marketing"
-            element={<BlogTwentyFive/>}
+            element={<BlogTwentyFive />}
           />
-           <Route
+          <Route
             path="/how-to-write-vacation-rental-description-that-converts"
-            element={<BlogTwentySix/>}
+            element={<BlogTwentySix />}
           />
-            <Route
+          <Route
             path="/pet-friendly-vacation-rentals"
-            element={<BlogTwentySeven/>}
+            element={<BlogTwentySeven />}
           />
-             <Route
+          <Route
             path="/how-to-attract-remote-work-travelers"
-            element={<BlogTwentyEight/>}
+            element={<BlogTwentyEight />}
           />
-            <Route
+          <Route
             path="/how-to-price-vacation-rental-holiday-weekends"
-            element={<BlogTwentyNine/>}
+            element={<BlogTwentyNine />}
           />
           <Route
             path="/how-to-handle-negative-reviews-vacation-rental"
-            element={<BlogThirty/>}
+            element={<BlogThirty />}
           />
-           <Route
-            path="/vacation-rental-photography-tips"
-            element={<BlogThirtyOne/>}
-          />
-           <Route
-            path="/why-vacation-rental-gets-views-but-no-bookings"
-            element={<BlogThirtyTwo/>}
-          />
-          <Route path="/relying-solely-on-third-party-rental-platforms-is-risky"
-          element={<BlogThirtyThree />}/>
-           <Route path="/set-jetting-tv-and-film-tourism-vacation-rentals-2026"
-          element={<BlogThirtyFour />}/>
-            <Route path="/vacation-rental-occupancy-rates-dropping-2026"
-          element={<BlogThirtyFive />}/>
-          <Route path="/how-to-build-a-vacation-rental-brand"
-          element={<BlogThirtySix />}/>
-           <Route path="/climate-risk-vacation-rentals-peak-season"
-          element={<BlogThirtySeven />}/>
-           <Route path="/bleisure-travel-vacation-rentals"
-          element={<BlogThirtyEight/>}/>
-           <Route path="/5-star-vacation-rental-host-tips"
-          element={<BlogThirtyNine/>}/>
-           <Route path="/email-marketing-for-vacation-rentals"
-          element={<BlogForty/>}/>
-           <Route path="/google-business-profile-for-vacation-rentals"
-          element={<BlogFortyOne/>}/>
-           <Route path="/smart-home-technology-for-vacation-rentals"
-          element={<BlogFortyTwo/>}/>
-           <Route path="/how-to-prepare-your-vacation-rental-for-fall"
-          element={<BlogFortyThree/>}/>
-  <Route path="/how-to-handle-difficult-vacation-rental-guests"
-          element={<BlogFortyFour/>}/>
-  <Route path="/how-to-set-up-a-pet-friendly-vacation-rental-without-the-mess-or-the-stress"
-          element={<BlogFortyFive/>}/>
-          
-  <Route path="/the-real-cost-of-bad-vacation-rental-photos-and-how-to-fix-them-for-free"
-          element={<BlogFortySix/>}/>
-           <Route path="/how-to-name-your-vacation-rental"
-          element={<BlogFortySeven/>}/>
-           <Route path="/short-term-vs-long-term-vacation-rental-2026"
-          element={<BlogFortyEight/>}/>
-          <Route path="/how-to-write-vacation-rental-house-rules"
-          element={<BlogFortyNine/>}/>
-          <Route path="/guide-to-upselling-how-to-earn-more-from-every-booking"
-          element={<BlogFifty/>}/>
-            <Route path="/what-guests-read-in-your-listing-and-what-they-skip"
-          element={<BlogFiftyOne/>}/>
-           <Route path="/how-to-market-your-vacation-rental-to-international-travelers-in-2026"
-          element={<BlogFiftyTwo/>}/>
-          <Route path="/the-vacation-rental-owners-guide-to-pricing-cleaning-fee"
-          element={<BlogFiftyThree/>}/>
-           <Route path="/how-to-use-vacation-rental-guest-reviews-as-marketing-content"
-          element={<BlogFiftyFour/>}/>
           <Route
-  path="/guest-just-cancelled-heres-exactly-what-to-do-in-the-next-24-hours"
-  element={<BlogFiftyFive />}
-/>
+            path="/vacation-rental-photography-tips"
+            element={<BlogThirtyOne />}
+          />
+          <Route
+            path="/why-vacation-rental-gets-views-but-no-bookings"
+            element={<BlogThirtyTwo />}
+          />
+          <Route
+            path="/relying-solely-on-third-party-rental-platforms-is-risky"
+            element={<BlogThirtyThree />}
+          />
+          <Route
+            path="/set-jetting-tv-and-film-tourism-vacation-rentals-2026"
+            element={<BlogThirtyFour />}
+          />
+          <Route
+            path="/vacation-rental-occupancy-rates-dropping-2026"
+            element={<BlogThirtyFive />}
+          />
+          <Route
+            path="/how-to-build-a-vacation-rental-brand"
+            element={<BlogThirtySix />}
+          />
+          <Route
+            path="/climate-risk-vacation-rentals-peak-season"
+            element={<BlogThirtySeven />}
+          />
+          <Route
+            path="/bleisure-travel-vacation-rentals"
+            element={<BlogThirtyEight />}
+          />
+          <Route
+            path="/5-star-vacation-rental-host-tips"
+            element={<BlogThirtyNine />}
+          />
+          <Route
+            path="/email-marketing-for-vacation-rentals"
+            element={<BlogForty />}
+          />
+          <Route
+            path="/google-business-profile-for-vacation-rentals"
+            element={<BlogFortyOne />}
+          />
+          <Route
+            path="/smart-home-technology-for-vacation-rentals"
+            element={<BlogFortyTwo />}
+          />
+          <Route
+            path="/how-to-prepare-your-vacation-rental-for-fall"
+            element={<BlogFortyThree />}
+          />
+          <Route
+            path="/how-to-handle-difficult-vacation-rental-guests"
+            element={<BlogFortyFour />}
+          />
+          <Route
+            path="/how-to-set-up-a-pet-friendly-vacation-rental-without-the-mess-or-the-stress"
+            element={<BlogFortyFive />}
+          />
 
+          <Route
+            path="/the-real-cost-of-bad-vacation-rental-photos-and-how-to-fix-them-for-free"
+            element={<BlogFortySix />}
+          />
+          <Route
+            path="/how-to-name-your-vacation-rental"
+            element={<BlogFortySeven />}
+          />
+          <Route
+            path="/short-term-vs-long-term-vacation-rental-2026"
+            element={<BlogFortyEight />}
+          />
+          <Route
+            path="/how-to-write-vacation-rental-house-rules"
+            element={<BlogFortyNine />}
+          />
+          <Route
+            path="/guide-to-upselling-how-to-earn-more-from-every-booking"
+            element={<BlogFifty />}
+          />
+          <Route
+            path="/what-guests-read-in-your-listing-and-what-they-skip"
+            element={<BlogFiftyOne />}
+          />
+          <Route
+            path="/how-to-market-your-vacation-rental-to-international-travelers-in-2026"
+            element={<BlogFiftyTwo />}
+          />
+          <Route
+            path="/the-vacation-rental-owners-guide-to-pricing-cleaning-fee"
+            element={<BlogFiftyThree />}
+          />
+          <Route
+            path="/how-to-use-vacation-rental-guest-reviews-as-marketing-content"
+            element={<BlogFiftyFour />}
+          />
+          <Route
+            path="/guest-just-cancelled-heres-exactly-what-to-do-in-the-next-24-hours"
+            element={<BlogFiftyFive />}
+          />
+          <Route
+            path="/you-have-a-vacation-rental-website-so-why-arent-guests-booking-direct"
+            element={<BlogFiftySix />}
+          />
+           <Route
+            path="/are-google-ads-worth-it-for-vacation-rentals-what-owners-should-know"
+            element={<BlogFiftySeven />}
+          />
+          <Route
+            path="/how-much-does-a-vacation-rental-website-cost"
+            element={<BlogFiftyEight />}
+          />
+           <Route
+            path="/vacation-rental-seo-what-helps-a-property-get-found"
+            element={<BlogFiftyNine />}
+          />
+          <Route
+            path="/how-to-improve-conversion-on-a-vacation-rental-website"
+            element={<BlogSixty />}
+          />
+           <Route
+            path="/what-should-a-vacation-rental-website-include"
+            element={<BlogSixtyOne />}
+          />
+             <Route
+            path="/how-ai-search-is-changing-seo-in-2026"
+            element={<BlogSixtyTwo />}
+          />
+           <Route
+            path="/can-ai-recommend-your-vacation-rental"
+            element={<BlogSixtyThree />}
+          />
+           <Route
+            path="/seo-after-keywords-why-being-useful-matters-more-than-repeating-search-terms"
+            element={<BlogSixtyFour />}
+          />
 
-          <Route path="/connect-with-us/" element={<Connect />} />
+          <Route path="/contact/" element={<Connect />} />
           <Route path="/privacy-policy/" element={<PrivacyPolicy />} />
           <Route path="/terms-&-conditions/" element={<TermsConditions />} />
           <Route path="/24/7-support/" element={<Support />} />
@@ -403,15 +490,15 @@ function App() {
           <Route path="/success" element={<Success />} />
           <Route path="/cancel" element={<Cancel />} />
 
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/blog/:slug" element={<SingleBlog />} />
+          {/* <Route path="/blogs" element={<Blogs />} /> */}
+          {/* <Route path="/blog/:slug" element={<SingleBlog />} /> */}
 
           {/* Admin Routes */}
           <Route path="/admin/login" element={<AdminLogin />} />
           {/* <Route path="/admin/dashboard" element={<Dashboard />} />
           <Route path="/admin/blogs" element={<BlogList />} />
-          <Route path="/admin/blogs/create" element={<CreateBlog />} /> */}
-          <Route
+          <Route path="/admin/blogscreate" element={<CreateBlog />} /> */}
+          {/* <Route
             path="/admin/dashboard"
             element={
               <AdminRoute>
@@ -420,9 +507,9 @@ function App() {
                 </AdminLayout>
               </AdminRoute>
             }
-          />
+          /> */}
 
-          <Route
+          {/* <Route
             path="/admin/blogs"
             element={
               <AdminRoute>
@@ -431,10 +518,10 @@ function App() {
                 </AdminLayout>
               </AdminRoute>
             }
-          />
+          /> */}
 
-          <Route
-            path="/admin/blogs/create"
+          {/* <Route
+            path="/admin/blogscreate"
             element={
               <AdminRoute>
                 <AdminLayout>
@@ -442,10 +529,10 @@ function App() {
                 </AdminLayout>
               </AdminRoute>
             }
-          />
+          /> */}
 
-          <Route
-            path="/admin/blogs/edit/:id"
+          {/* <Route
+            path="/admin/blogsedit/:id"
             element={
               <AdminRoute>
                 <AdminLayout>
@@ -453,7 +540,7 @@ function App() {
                 </AdminLayout>
               </AdminRoute>
             }
-          />
+          /> */}
         </Routes>
       </Suspense>
 

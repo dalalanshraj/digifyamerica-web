@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import blogImage33 from "/blogs/blogs33.webp";
+ 
 import { Link } from "react-router-dom";
 
 const BlogThirtyThree = () => {
@@ -38,7 +38,7 @@ const BlogThirtyThree = () => {
 
             <div className="flex justify-center mb-10">
               <img
-                src={blogImage33}
+                src="/blogs/blogs33.webp"
                 alt="Relying Solely on Third-Party Rental Platforms Is Risky for Your Vacation Rental Business"
                 className="w-full max-w-4xl h-auto object-cover rounded-xl shadow-lg"
               />
@@ -302,7 +302,7 @@ const BlogThirtyThree = () => {
               </p>
 
               <Link
-                to={"/connect-with-us/#contact-form"}
+                to={"/contact/"}
                 className="inline-block mt-6 bg-white text-[#234C6A] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition"
               >
                 Book a free 15-minute audit with our team →

@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import blogImage11 from "/blogs/blogs11.webp";
+ 
 import { Link } from "react-router-dom";
 
 const BlogEleven = () => {
@@ -34,7 +34,7 @@ const BlogEleven = () => {
             {/* HERO IMAGE */}
             <div className="flex justify-center mb-10">
               <img
-                src={blogImage11}
+                src="/blogs/blogs11.webp"
                 alt="AI Tools for Vacation Rental Owners"
                 className="w-full max-w-4xl h-auto object-cover rounded-xl shadow-lg"
               />
@@ -311,7 +311,7 @@ const BlogEleven = () => {
               </p>
 
               <Link
-                to={"/connect-with-us/#contact-form"}
+                to={"/contact/"}
                 className="inline-block bg-white text-[#234C6A] px-6 py-3 rounded-full font-semibold mt-6 hover:scale-105 transition"
               >
                 Book a free 15-minute audit with our team →

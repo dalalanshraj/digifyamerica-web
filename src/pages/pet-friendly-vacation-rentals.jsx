@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-import blogImage27 from "/blogs/blogs27.webp";
+ 
 import { Link } from "react-router-dom";
 
 const BlogTwentySix = () => {
@@ -37,7 +37,7 @@ const BlogTwentySix = () => {
 
             <div className="flex justify-center mb-10">
               <img
-                src={blogImage27}
+                src="/blogs/blogs27.webp"
                 alt="Pet Friendly Vacation Rental"
                 className="w-full max-w-4xl h-auto object-cover rounded-xl shadow-lg"
               />
@@ -349,7 +349,7 @@ const BlogTwentySix = () => {
               </p>
 
               <Link
-                to={"/connect-with-us/#contact-form"}
+                to={"/contact/"}
                 className="inline-block bg-white text-[#234C6A] px-6 py-3 rounded-full font-semibold mt-6 hover:scale-105 transition"
               >
                 Book a free 15-minute audit with our team →

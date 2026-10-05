@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from "react-helmet-async";
-import blogImage3 from '/blogs/blogs8.webp';
+ 
 import { Link } from 'react-router-dom';
 
 const BlogEighth = () => {
@@ -30,7 +30,7 @@ const BlogEighth = () => {
 
             <div className="flex justify-center mb-10">
               <img
-                src={blogImage3}
+                src="/blogs/blogs8.webp"
                 alt="How to Use Data to Optimize Ad Performance"
                 className="w-full max-w-4xl h-auto object-cover rounded-xl shadow-lg"
               />
@@ -284,7 +284,7 @@ const BlogEighth = () => {
               </p>
 
               <Link
-                to={"/connect-with-us/#contact-form"}
+                to={"/contact/"}
                 className="inline-block bg-white text-[#234C6A] px-6 py-3 rounded-full font-semibold mt-6 hover:scale-105 transition"
               >
                 Book a free 15-minute audit with our team →

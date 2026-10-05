@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import blogImage31 from "/blogs/blogs31.webp";
+ 
 import { Link } from "react-router-dom";
 
 const BlogThirtyOne = () => {
@@ -36,7 +36,7 @@ const BlogThirtyOne = () => {
 
             <div className="flex justify-center mb-10">
               <img
-                src={blogImage31}
+                src="/blogs/blogs31.webp"
                 alt="Vacation Rental Photography Tips: How to Make Your Listing Photos Sell the Experience"
                 className="w-full max-w-4xl h-auto object-cover rounded-xl shadow-lg"
               />
@@ -345,7 +345,7 @@ const BlogThirtyOne = () => {
               </p>
 
               <Link
-                to={"/connect-with-us/#contact-form"}
+                to={"/contact/"}
                 className="inline-block mt-6 bg-white text-[#234C6A] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition"
               >
                 Book a free 15-minute audit with our team →

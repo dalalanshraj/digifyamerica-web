@@ -16,7 +16,7 @@ export default function SingleBlog() {
   const fetchBlog = async () => {
     try {
       const res = await axios.get(
-        `${import.meta.env.VITE_API_URL}/api/blogs/${slug}`
+        `${import.meta.env.VITE_API_URL}/api/blogs/blogs${slug}`
       );
 
       setBlog(res.data);
@@ -78,7 +78,7 @@ export default function SingleBlog() {
               <div className="mb-10">
 
                 <img
-                  src={`${import.meta.env.VITE_API_URL}/uploads/blogs/${blog.bannerImage}`}
+                  src={`${import.meta.env.VITE_API_URL}/uploads/blogs/blogs${blog.bannerImage}`}
                   alt={blog.title}
                   className="w-full rounded-2xl shadow-xl"
                 />
@@ -266,7 +266,7 @@ export default function SingleBlog() {
             <div className="mt-16 text-center">
 
               <Link
-                to="/blogs"
+                to="/blogs/blogs"
                 className="inline-flex items-center gap-3 bg-[#1B3C53] text-white px-8 py-4 rounded-full hover:bg-[#163247] transition"
               >
                 ← Back to Blogs

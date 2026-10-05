@@ -55,19 +55,19 @@ const projects = [
   },
   {
     image: "/project-img/project14.webp",
-    title: "Villa 1",
-    link: "https://template1.mydesign.blog/",
+    title: "Nivel del Mar",
+    link: "https://niveldelmar30a.com/",
     // tag: 'Single Villa Website',
-    alt: "New Villa 1 Website",
+    alt: "Nivel del Mar",
   },
 
-  // {
-  //   image: templateOne,
-  //   title: "Villa Three",
-  //   link: "https://template1.mycreativewebsite.com/",
-  //   // tag: 'Villa Rental Website',
-  //   alt: "template1 Website",
-  // },
+  {
+    image:  "/project-img/project15.webp",
+    title: "Template One",
+    link: "https://template2.mydesign.blog/",
+    // tag: 'Villa Rental Website',
+    alt: "Template One",
+  },
   // {
   //   image: templateTwo,
   //   title: "Villa four",
